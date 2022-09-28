@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  xml파일이란? (Extensible Markup Language)-->
+<!-- xml파일의 목적? 
+     서로 다른 주체(파일)들간의 데이터를 주고받는 걸 도와주는 역할 -->
+ <!-- 1) xml파일이 어떤 내용을 기술할건지 정의를 잡아주기 -->
+ <!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <!-- 어떤 dtd를 사용하는가?  -->
+  
+ <configuration>
+ 
+  <typeAliases>  
+ <typeAlias type="com.smhrd.model.Board" alias="Board"/>
+ </typeAliases>
+ 
+ <!-- 2) DB 연결과 관련된 정의를 기술 -->
+ <environments default ="development">
+        <environment id="development">
+           <transactionManager type="JDBC"/>
+           <dataSource type="POOLED">
+           <!-- 3) DB정보 (user, password, url)를 기술 -->
+          <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+          <property name="url" value="jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe"/>
+          <property name="username" value="cgi_3_0924_3"/>
+          <property name="password" value="smhrd3"/>
+          <!--  프로젝트때 url, username, password다 바꿔야함 -->
+           </dataSource>
+        </environment>
+ </environments>
+ 
+<!-- 4)  sql 구문을 가지고 있는 파일과 연결 --> 
+<mappers>
+<!--  만약 mapper 파일이 여러 개라면 mapper 태그를 여러 개 잡아주기! -->
+     <mapper resource="com/smhrd/database/BoardMapper.xml"/> 
+</mappers>
+ <!--  테이블이 여러 개이면 mapper 파일이 여러 개라면 mapper 태그를 여러 개 잡아주기! .이아니라 /로 -->
+
+
+ 
+ 
+ </configuration>
+ 
+ 
+ 
