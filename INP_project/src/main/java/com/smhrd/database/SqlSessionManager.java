@@ -14,7 +14,7 @@ public class SqlSessionManager {
 	// 객체 ---> 클래스 하나 당 여러 개를 생성할 수 있음
 	// 인스턴스 --> 클래스 하나에 인스턴스 하나
 	// 인스턴스 생성자
-
+  ///11111
 	static {
 		// mybatis -config.xml 파일을 가져다가
 		// sqlsession을 만들 수 있게끔 코드 작성
