@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sql구문을 설정하는 파일 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace : DAO 파일명을 원칙으로 작성한다. 
+     mapper 파일이 여러개였을 때 namespace는 절대 중복되면 안된다.
+   -->
+<mapper namespace="com.smhrd.model.DAO">
+<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 
+풀네임을 작성하고 싶지않다면 mybatis-config.xml에 별칭을 설정 -->
+<select id="selectAll" resultType="Board">
+select * from board      <!-- 세미콜론X -->
+</select>
+<!-- insert, update, delete: 작성: parameterType (받아오는 값)
+select : resultType(되돌려줄 결과값, 기본 자료형이아니라면 지정 
+** parameter로 받아온 데이터는 #{필드명}값을 가져올 수있다.  -->
+
+
+
+<insert id="insert" parameterType="Board">
+insert into board(image, title, writer, content, board_num)
+values(#{image},#{title},#{writer},#{content},board_num.nextval)
+</insert>
+
+ 
+ 
+ <select id="select" resultType="Board" >
+select * from board 
+where board_num=#{board_num}  <!-- 셀렉트 string 은 잘 잡아옴 파라미터타입 안써도 됌  -->
+</select>
+
+<update id="update" parameterType="Board">
+UPDATE board
+SET title=#{title}, writer=#{writer},content=#{content}
+Where board_num=#{board_num}
+</update>
+
+<delete id="delete" parameterType="Board">   <!-- 채워줄 게 하나밖에 없는 경우 파라미터 타입 안써도 됨 -->
+Delete from board
+Where board_num=#{board_num}
+</delete>
+
+</mapper>
+ 
+ 
+ 
+ 
