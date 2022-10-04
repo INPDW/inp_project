@@ -1,5 +1,3 @@
-@charset "EUC-KR";
-
     @media (max-width: 1000px) {
         .board_wrap {
             width: 100%;
@@ -10,12 +8,8 @@
 
         .board_list .num,
         .board_list .writer,
-        .board_list .type {
+        .board_list .count {
             display: none;
-        }
-
-        .board_list .date {
-            width: 40px;
         }
 
         .board_list .title {
@@ -24,6 +18,10 @@
 
         .board_list .top .title {
             text-indent: 0;
+        }
+
+        .board_list .date {
+            width: 40px;
         }
 
         .board_page a {
