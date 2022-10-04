@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 
@@ -20,11 +22,11 @@
 			<button id = "btn2">JOIN</button> 
 			<div id = "foot">
 			
-					<li><a href="#">ë°œìžì·¨</a></li>
-					<li><a href="#">ìœ ì‚° ì§€ë„</a></li>
-					<li><a href="#">ì¸ë¬¼ì†Œê°œ</a></li>
-					<li><a href="#">ìž¥ì†Œì†Œê°œ</a></li>
-					<li><a href="#">ì»¤ë®¤ë‹ˆí‹°</a></li>
+					<li><a href="#">¹ßÀÚÃë</a></li>
+					<li><a href="#">À¯»ê Áöµµ</a></li>
+					<li><a href="#">ÀÎ¹°¼Ò°³</a></li>
+					<li><a href="#">Àå¼Ò¼Ò°³</a></li>
+					<li><a href="#">Ä¿¹Â´ÏÆ¼</a></li>
 				
 					</div>
 	</top1>
@@ -37,34 +39,34 @@
     <tr>
     <table margalign="left" border = "1">
         <tr>
-         <td>ìž¥ì†Œ</td>
-         <td>ìœ¤ë´‰ê¸¸ ì˜ì‚¬ ìˆœêµ­ê¸°ë…ë¹„</td>         
+         <td>Àå¼Ò</td>
+         <td>À±ºÀ±æ ÀÇ»ç ¼ø±¹±â³äºñ</td>         
         </tr>
         <tr>
-         <td>ì£¼ì†Œ</td>
-         <td>ì¶”í›„ ì¶”ê°€</td>    
+         <td>ÁÖ¼Ò</td>
+         <td>ÃßÈÄ Ãß°¡</td>    
         </tr>
         <tr>
-         <td>í˜„ì§€ì–¸ì–´ ì£¼ì†Œ</td>
-         <td>ì¶”í›„ ì¶”ê°€</td>    
+         <td>ÇöÁö¾ð¾î ÁÖ¼Ò</td>
+         <td>ÃßÈÄ Ãß°¡</td>    
         </tr>
         <tr>
-         <td>êµ­ê°€</td>
-         <td>ì¶”í›„ ì¶”ê°€</td>    
+         <td>±¹°¡</td>
+         <td>ÃßÈÄ Ãß°¡</td>    
         </tr>
         <tr>
-         <td>ìƒíƒœ</td>
-         <td>ì¶”í›„ ì¶”ê°€</td>    
+         <td>»óÅÂ</td>
+         <td>ÃßÈÄ Ãß°¡</td>    
         </tr>
         <tr>
-         <td>ê´€ë ¨ì˜ìƒ</td>
-         <td><iframe width="500" height="200" src="https://www.youtube.com/embed/9WmvjVNLygU" title="ê°€ë‚˜ìžì™€ ìœ¤ë´‰ê¸¸ì˜ì‚¬ ì•”ìž¥ì§€ì™€ ìˆœêµ­ê¸°ë…ë¹„ ë‹¤ë…€ì˜¨ ì¼ë³¸ì¼ìƒ Vlog 85" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>    
+         <td>°ü·Ã¿µ»ó</td>
+         <td><iframe width="500" height="200" src="https://www.youtube.com/embed/9WmvjVNLygU" title="°¡³ªÀÚ¿Í À±ºÀ±æÀÇ»ç ¾ÏÀåÁö¿Í ¼ø±¹±â³äºñ ´Ù³à¿Â ÀÏº»ÀÏ»ó Vlog 85" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>    
         </tr>
         <tr>
-         <td colspan="2">ë‚´ìš©</td> 
+         <td colspan="2">³»¿ë</td> 
         </tr>
         <tr>
-         <td colspan="2" rowspan="4" ><p>ì¶”í›„ ì¶”ê°€</p>
+         <td colspan="2" rowspan="4" ><p>ÃßÈÄ Ãß°¡</p>
         </tr>
         
         

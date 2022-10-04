@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
 
 </head>
 <body>
-
+    
 	<top1 class="top1">
 	<div></div>
 
@@ -22,11 +24,11 @@
 
 	<div id="foot">
 	    
-		<li><a href="#">λ°μμ·¨</a></li>
-		<li><a href="#">μ μ‚° μ§€λ„</a></li>
-		<li><a href="#">μΈλ¬Όμ†κ°</a></li>
-		<li><a href="#">μ¥μ†μ†κ°</a></li>
-		<li><a href="#">μ»¤λ®¤λ‹ν‹°</a></li>
+		<li><a href="#">ΉίΐΪΓλ</a></li>
+		<li><a href="#">ΐ―»κ Αφµµ</a></li>
+		<li><a href="#">ΐΞΉ°ΌÒ°³</a></li>
+		<li><a href="#">ΐεΌÒΌÒ°³</a></li>
+		<li><a href="#">ΔΏΉΒ΄ΟΖΌ</a></li>
 
 	</div>
 	</top1>
@@ -49,10 +51,10 @@
 					src="./images/spot1.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
-			<td>μ„¤λª…1</td>
-			<td>μ„¤λª…2</td>
-			<td>μ„¤λª…3</td>
-			<td>μ„¤λª…4</td>
+			<td>Ό³Έν1</td>
+			<td>Ό³Έν2</td>
+			<td>Ό³Έν3</td>
+			<td>Ό³Έν4</td>
 		</tr>
 		<tr>
 			<td><a href="./spot_detail.html"><img
@@ -65,18 +67,18 @@
 					src="./images/spot1.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
-			<td>μ„¤λª…5</td>
-			<td>μ„¤λª…6</td>
-			<td>μ„¤λª…7</td>
-			<td>μ„¤λª…8</td>
+			<td>Ό³Έν5</td>
+			<td>Ό³Έν6</td>
+			<td>Ό³Έν7</td>
+			<td>Ό³Έν8</td>
 		</tr>
 
 	</table>
-		
 	<center>
-		<button type="button" >μ΄μ „</button>
-		<button type="button" >λ‹¤μ</button>
-	</center>
+		<button type="button" >ΐΜΐό</button>
+		<button type="button" >΄Ωΐ½</button>
+	</center>	
+
 
 </body>
 </html>
