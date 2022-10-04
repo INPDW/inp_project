@@ -15,29 +15,6 @@
             <strong>커뮤니티</strong>
         </div>
 
-
-        
-            <div class="search-condition">
-                <div class="form-group">
-                    <label for="q_searchkey" class="sr-only"></label>
-                    <select name="q.searchkey" id="q.searchkey" class="select" style="width: 150px;">
-                        <option value>-- 검색선택 --</option>
-                        <option value="sj_1002"> 제목 </option>
-                        <option value="registernm_1001">작성자</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="q_searchval" class="sr-only"></label>
-                    <input type="text" name="q_searchval" id="q_searchval"
-                    value class="form-control" placeholder="검색어를 입력하세요.">
-                </div>
-                
-                <button type="button" class="btn" >검색</button>
-                
-            </div>
-            
-        
-
         <div class="board_write_wrap">
             <div class="board_list">
                 <div class="top">
