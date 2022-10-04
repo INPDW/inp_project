@@ -65,6 +65,16 @@
 				visibleClass: 'is-menu-visible'
 			});
 
+			
+			$('#image1').hover(function() {
+				$('#content1').fadeIn("slow");
+			  }, function(){
+				$('#content1').fadeOut("slow");
+			  });
+
+
+
+
 	// Header.
 		if ($banner.length > 0
 		&&	$header.hasClass('alt')) {
@@ -81,3 +91,25 @@
 		}
 
 })(jQuery);
+
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: '2',
+	spaceBetween: 0,
+	centeredSlides: true,
+	preventClicks:true,
+	slideToClickedSlide : true,
+	loop:true,  
+	on: {
+	  init: function () {
+		$('.swiper-slide').addClass('changed');
+	  },
+	  slideChangeTransitionStart : function() {
+		$('.swiper-slide').addClass('changing');
+		$('.swiper-slide').removeClass('changed');
+	  },
+	  slideChangeTransitionEnd : function() {
+		$('.swiper-slide').removeClass('changing');
+		$('.swiper-slide').addClass('changed');
+	  }
+	},
+  });
