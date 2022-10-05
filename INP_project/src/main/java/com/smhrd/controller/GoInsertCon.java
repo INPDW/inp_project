@@ -7,7 +7,7 @@ public class GoInsertCon implements Controller {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-	   return "Insert";
+	   return "글쓰기페이지";
 	}
 
 }

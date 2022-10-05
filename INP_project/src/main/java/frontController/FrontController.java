@@ -13,17 +13,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.smhrd.controller.ComAllCon;
+import com.smhrd.controller.ComDeleteCon;
+import com.smhrd.controller.ComInsertCon;
+import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
-import com.smhrd.controller.FlaskCon;
-import com.smhrd.controller.FlaskImageCon;
 import com.smhrd.controller.GoInsertCon;
+import com.smhrd.controller.IDCheckCon;
 import com.smhrd.controller.InsertCon;
+import com.smhrd.controller.JoinCon;
+import com.smhrd.controller.LoginCon;
+import com.smhrd.controller.SearchContentCon;
+import com.smhrd.controller.SearchTitleCon;
 import com.smhrd.controller.SelectAllCon;
 import com.smhrd.controller.SelectOneCon;
 import com.smhrd.controller.UpdateCon;
-import com.smhrd.model.Board;
-import com.smhrd.model.DAO;
 
 // *.do  -> .do가 붙은 모든 요청을 이 frontController에서 처리하겠다. 
 // 어떻게 구분할 것인가? 
@@ -47,8 +52,17 @@ public class FrontController extends HttpServlet {
 		mappings.put("/SelectOne.do", new SelectOneCon());
 		mappings.put("/Update.do", new UpdateCon());
 		mappings.put("/Delete.do", new DeleteCon());
-		mappings.put("/Flask.do", new FlaskCon());
-		mappings.put("/FlaskImage.do", new FlaskImageCon());
+		mappings.put("/Join.do", new JoinCon());
+		mappings.put("/Login.do", new LoginCon());
+		mappings.put("/IDCheck.do", new IDCheckCon());
+		mappings.put("/SearchTitle.do", new SearchTitleCon());
+		mappings.put("/SearchContent.do", new SearchContentCon());
+		mappings.put("/ComAll.do", new ComAllCon());
+		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
+		mappings.put("/ComInsertCon.do", new ComInsertCon());
+		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
+		
+		
 	}
 
 	// 요청할때마다 뜨는게 아니라 한 번 밖에 일어나지 않음 -> 한번만 실행
@@ -56,7 +70,7 @@ public class FrontController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.setCharacterEncoding("EUC-KR");
+		request.setCharacterEncoding("EUC-KR"); // 이거 UTF-8로 바꿔야되는거 아닌가 ???
 
 		// http://localhost:8094/BoardProject/SelectOne.do
 		// http://localhost:8094/BoardProject/GoInsert.do
