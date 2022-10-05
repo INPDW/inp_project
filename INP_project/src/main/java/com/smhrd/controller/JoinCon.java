@@ -27,10 +27,10 @@ public class JoinCon implements Controller {
 		int row = dao.join(dto); // dao의 join기능 실행
 
 		if (row > 0) {
-			return "메인페이지"; // 회원가입 성공. 메인페이지로 ~~
+			return "main"; // 회원가입 성공. 메인페이지로 ~~
 
 		} else {
-			return "회원가입페이지"; // 회원가입 실패. 회원가입페이지로~~
+			return "join"; // 회원가입 실패. 회원가입페이지로~~
 		}
 
 	}

@@ -4,11 +4,18 @@ public class CommunityDTO {
 	
 	private String article_seq;
 	private String article_title;
-	private String alticle_content;
+	private String article_content;
 	private String article_date;
 	private String m_id;
 	private String article_cnt;
+	private String m_nick;
 	
+	public String getM_nick() {
+		return m_nick;
+	}
+	public void setM_nick(String m_nick) {
+		this.m_nick = m_nick;
+	}
 	public String getArticle_seq() {
 		return article_seq;
 	}
@@ -21,11 +28,11 @@ public class CommunityDTO {
 	public void setArticle_title(String article_title) {
 		this.article_title = article_title;
 	}
-	public String getAlticle_content() {
-		return alticle_content;
+	public String getArticle_content() {
+		return article_content;
 	}
-	public void setAlticle_content(String alticle_content) {
-		this.alticle_content = alticle_content;
+	public void setArticle_content(String alticle_content) {
+		this.article_content = alticle_content;
 	}
 	public String getArticle_date() {
 		return article_date;

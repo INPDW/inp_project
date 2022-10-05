@@ -42,10 +42,20 @@ public class CommunityDAO {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		// 2.mapper.xml안에 있는 쿼리문 실행
 		// sqlSession.메소드(mapper.xml안에 있는 쿼리문 id값, mapper.xml로 넘겨주고 싶은값);
-		result = sqlSession.selectOne("com.smhrd.model.CommunityDAO.select", alticle_seq);
+		result = sqlSession.selectOne("com.smhrd.model.CommunityDAO.selectOne", alticle_seq);
 		sqlSession.close();
 		return result;
 
+	}
+	
+	public CommunityDTO nick(String m_id) {
+		CommunityDTO result = null;
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		result = sqlSession.selectOne("com.smhrd.model.CommunityDAO.nick", m_id);
+		
+		return result;
 	}
 
 	public int update(CommunityDTO CommunityDTO) {

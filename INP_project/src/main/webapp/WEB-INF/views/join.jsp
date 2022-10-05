@@ -15,19 +15,19 @@
 
 	<center>
   
-    <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this);">                                                                                        
+    <form action="Join.do" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this);">                                                                                        
         <h2>회원가입</h2>
 
         <div class="textForm">
-            <input name="loginId" type="text" class="id" placeholder="아이디">
+            <input name="m_id" type="text" class="id" placeholder="아이디">
         </div>
 
         <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+          <input name="m_pw" type="password" class="pw" placeholder="비밀번호">
         </div>
     
         <div class="textForm">
-          <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+          <input name="m_nick" type="text" class="nickname" placeholder="닉네임">
         </div>
 
         <div class="idover" >

@@ -1,11 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+
+ <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>  
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/css.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
@@ -17,32 +27,28 @@
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title">
+                <form action="Insert.do" method="post">
                     <dl>
                         <dt>제목</dt>
-                        <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어감"></dd>
+                        <dd><input type="text" name="article_title" placeholder="제목 입력"></dd>
                     </dl>
                 </div>
                 <div class="info">
                     <dl>
                         <dt>작성자</dt>
-                        <dd><input type="text" placeholder="작성자 입력" value="철수"></dd>
+                        <dd>${memberDTO.m_nick}</dd>
                     </dl>
                 </div>
                 <div class="cont">
-                    <textarea placeholder="내용 입력" style="font-size: 15px;">
-글 내용이 들어감
-글 내용이 들어감
-글 내용이 들어감
-글 내용이 들어감
-글 내용이 들어감
-                    </textarea>
+                    <textarea name="article_content" placeholder="내용 입력"></textarea>
                 </div>
 
             </div>
             <div class="bt_wrap">
-                <a href="view.html" class="on">수정</a>
-                <a href="view.html">취소</a>
+                <a><input type="submit" class="btn" value="등록"></a>
+                <a href="GoList.do">취소</a>
             </div>
+                </form>
         </div>
     </div>
 

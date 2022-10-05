@@ -13,23 +13,23 @@
 	</select>
 	<!-- insert, update, delete: 작성: parameterType (받아오는 값) select : resultType(되돌려줄 
 		결과값, 기본 자료형이아니라면 지정 ** parameter로 받아온 데이터는 #{필드명}값을 가져올 수있다. -->
-	<select id="select" resultType="Community">
+	<select id="selectOne" resultType="Community">
 		select * from inp_community
-		where article_seq=#{alticle_seq}  <!-- 셀렉트 string 은 잘 잡아옴 파라미터타입 안써도 됌 -->
+		where article_seq=#{article_seq}
 	</select>
 
 
 
 	<insert id="insert" parameterType="Community">
-		insert into inp_community(alticle_title, alticle_content, m_id)
-		values(#{alticle_title}, #{alticle_content}, #{m_id})
+		insert into inp_community(article_title, article_content, m_id)
+		values(#{article_title}, #{article_content}, #{m_id})
 	</insert>
 	
 
 	<update id="update" parameterType="Community">
 		UPDATE inp_community
-		SET alticle_title=#{alticle_title}, alticle_content=#{alticle_content}
-		Where article_seq=#{article_seq}
+		SET article_title = #{article_title}, article_content = #{article_content}
+		Where article_seq = #{article_seq}
 	</update>
 
 	<delete id="delete" parameterType="Community">   <!-- 채워줄 게 하나밖에 없는 경우 파라미터 타입 안써도 됨 -->
@@ -47,6 +47,14 @@
 		select * from inp_community
 		where article_content like '%{article_content}%'
 	</select>
+	
+	<select id = "nick" parameterType="Community">
+		select a.m_nick 
+		from inp_member a, inp_community b
+		where a.m_id = b.m_id
+	</select>
+	
+	
 </mapper>
  
  

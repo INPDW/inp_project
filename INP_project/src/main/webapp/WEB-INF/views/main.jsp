@@ -1,4 +1,9 @@
-<!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page isELIgnored="false" %>
+
+  <!DOCTYPE HTML>
 
 <html>
 	<head>
@@ -33,15 +38,15 @@
 			
 			<input type="text" id="id">
 			<input type="text" id ="pw">
-			<button id ="btn1">LOGIN</button> 
-			<button id = "btn2">JOIN</button> 
+			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
+			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
 			<div id = "foot">
 				
-					<li><a href="#">발자취</a></li>
-					<li><a href="#">유산 지도</a></li>
-					<li><a href="#">인물소개</a></li>
-					<li><a href="#">장소소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">������</a></li>
+					<li><a href="#">���� ����</a></li>
+					<li><a href="#">�ι��Ұ�</a></li>
+					<li><a href="#">��ҼҰ�</a></li>
+					<li><a href="SelectAll.do">Ŀ�´�Ƽ</a></li>
 				
 					
 			</top1>
@@ -78,7 +83,7 @@
 									</div>
 								  </div>
 								
-							<!-- <h2>팔일오</h2>
+							<!-- <h2>���Ͽ�</h2>
 							<p>Another fine responsive<br />
 							site template freebie<br />
 							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
@@ -168,8 +173,8 @@
 						
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" id='image1' ></div><div class="content" id="content1">
-							<div id = 'textbox2'>김구</div><br>
-							<h1> 어쩌고 저쩌고</h1>
+							<div id = 'textbox2'>�豸</div><br>
+							<h1> ��¼�� ��¼��</h1>
 							
 						</div>
 						</section>
@@ -269,4 +274,5 @@
 			<script src="assets/js/main.js"></script>
 	</div>
 	</body>
-</html>
+</html>  
+

@@ -19,7 +19,12 @@ import com.smhrd.controller.ComInsertCon;
 import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
-import com.smhrd.controller.GoInsertCon;
+import com.smhrd.controller.GoEditCon;
+import com.smhrd.controller.GoJoinCon;
+import com.smhrd.controller.GoListCon;
+import com.smhrd.controller.GoLoginCon;
+import com.smhrd.controller.GoViewCon;
+import com.smhrd.controller.GoWriteCon;
 import com.smhrd.controller.IDCheckCon;
 import com.smhrd.controller.InsertCon;
 import com.smhrd.controller.JoinCon;
@@ -47,20 +52,26 @@ public class FrontController extends HttpServlet {
 		mappings = new HashMap<>();
 		// HashMap의 key와 value 집어넣기
 		mappings.put("/SelectAll.do", new SelectAllCon());
-		mappings.put("/GoInsert.do", new GoInsertCon());
 		mappings.put("/Insert.do", new InsertCon());
 		mappings.put("/SelectOne.do", new SelectOneCon());
 		mappings.put("/Update.do", new UpdateCon());
 		mappings.put("/Delete.do", new DeleteCon());
 		mappings.put("/Join.do", new JoinCon());
 		mappings.put("/Login.do", new LoginCon());
-		mappings.put("/IDCheck.do", new IDCheckCon());
 		mappings.put("/SearchTitle.do", new SearchTitleCon());
 		mappings.put("/SearchContent.do", new SearchContentCon());
 		mappings.put("/ComAll.do", new ComAllCon());
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
 		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
+		mappings.put("/GoJoin.do", new GoJoinCon());
+		mappings.put("/GoLogin.do", new GoLoginCon());
+		mappings.put("/GoView.do", new GoViewCon());
+		mappings.put("/GoWrite.do", new GoWriteCon());
+		mappings.put("/GoList.do", new GoListCon());
+		mappings.put("/GoEdit.do", new GoEditCon());
+		
+		mappings.put("/IDCheck.do", new IDCheckCon());
 		
 		
 	}
