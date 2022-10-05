@@ -19,10 +19,14 @@ import com.smhrd.controller.ComInsertCon;
 import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
+import com.smhrd.controller.GoCulmap;
 import com.smhrd.controller.GoEditCon;
+import com.smhrd.controller.GoFootmap;
 import com.smhrd.controller.GoJoinCon;
 import com.smhrd.controller.GoListCon;
 import com.smhrd.controller.GoLoginCon;
+import com.smhrd.controller.GoPeopleCon;
+import com.smhrd.controller.GoPlaceCon;
 import com.smhrd.controller.GoViewCon;
 import com.smhrd.controller.GoWriteCon;
 import com.smhrd.controller.IDCheckCon;
@@ -71,10 +75,13 @@ public class FrontController extends HttpServlet {
 		mappings.put("/GoWrite.do", new GoWriteCon());
 		mappings.put("/GoList.do", new GoListCon());
 		mappings.put("/GoEdit.do", new GoEditCon());
+		mappings.put("/GoFootmap.do", new GoFootmap());
+		mappings.put("/GoCulmap.do", new GoCulmap());
+		mappings.put("/GoPeople.do", new GoPeopleCon());
+		mappings.put("/GoPlace.do", new GoPlaceCon());
 		
 		mappings.put("/IDCheck.do", new IDCheckCon());
 		
-		mappings.put("/PlaceAll.do", new PlaceAllCon());
 	}
 
 	// 요청할때마다 뜨는게 아니라 한 번 밖에 일어나지 않음 -> 한번만 실행

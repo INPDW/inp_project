@@ -7,6 +7,4 @@ public interface Controller {
    
 	public String execute(HttpServletRequest request, HttpServletResponse response);
 	
-	// 모든 con의 부모
-	
 }

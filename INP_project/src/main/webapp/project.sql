@@ -1,1 +1,1 @@
-select * from 
+select * from inp_member;
