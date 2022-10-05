@@ -23,7 +23,7 @@ public class SelectOneCon implements Controller {
 		// request scope 데이터를 담아서 이동
 		// redirect( request scope 유지 xxx)
 		// forward(request scope 유지 ooo)
-	     return "게시물 상세보기 페이지";
+	     return "view";
 		
 	
 		// 3. jsp로 페이지를 이동하면서 조회해온 데이터 보내주기

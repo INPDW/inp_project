@@ -16,26 +16,31 @@
         </div>
         <div class="board_write_wrap">
             <div class="board_write">
+                  	  <form action="Update.do">
                 <div class="title">
                     <dl>
                         <dt>제목</dt>
-                        <dd><input type="text" placeholder="제목 입력"></dd>
+                        <dd><input type="text" placeholder="제목 입력" id="article_title" value="${dto.article_title}"></dd>
                     </dl>
                 </div>
                 <div class="info">
                     <dl>
                         <dt>작성자</dt>
-                        <dd><input type="text" placeholder="작성자 입력"></dd>
+                        <dd>${dto.m_id}</dd>
                     </dl>
                 </div>
                 <div class="cont">
-                    <textarea placeholder="내용 입력"></textarea>
-                </div>
+                    <textarea placeholder="내용 입력" id="article_content" style="font-size: 15px;">
 
-            </div>
+					${dto.article_content}
+
+                    </textarea>
+                </div>
             <div class="bt_wrap">
-                <a href="view.html" class="on">등록</a>
-                <a href="list.html">취소</a>
+                <a><input type="submit" class="btn" value="수정"></a>
+                <a href="GoView.do">취소</a>
+            </div>
+                  	  </form>
             </div>
         </div>
     </div>

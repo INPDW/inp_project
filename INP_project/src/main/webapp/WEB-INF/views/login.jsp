@@ -12,15 +12,15 @@
 
 	<center>
   
-    <form action="dologin" method="POST" class="loginForm" onsubmit="DologinForm__submit(this);">                                                                                        
+    <form action="Login.do" method="POST" class="loginForm" onsubmit="DologinForm__submit(this);">                                                                                        
         <h2>로그인</h2>
 
         <div class="textForm">
-            <input name="loginId" type="text" class="id" placeholder="아이디">
+            <input name="m_id" type="text" class="id" placeholder="아이디">
         </div>
 
         <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+          <input name="m_pw" type="password" class="pw" placeholder="비밀번호">
         </div>
     
         <input type="submit" class="btn" value="로그인">

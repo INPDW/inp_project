@@ -15,11 +15,11 @@ public class IDCheckCon implements Controller {
 		String m_id = request.getParameter("m_id"); // 아이디 중복확인 클릭하면 사용자가 입력한 아이디 받아옴
 		
 		MemberDAO dao = new MemberDAO();
-		int result = dao.idCheck(m_id); // dao에 있는 idcheck 실행
+		MemberDTO result = dao.idCheck(m_id); // dao에 있는 idcheck 실행
 		
-		if(result==1) {
+		if(result==null) {
 			return "회원가입가능창"; // 회원가입 가능합니다 뜨게하기
-		}else {
+		}else {					
 			return "아이디중복창"; // 중복된 아이디입니다 뜨게하기
 		}
 	

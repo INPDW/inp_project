@@ -17,7 +17,7 @@ public class SelectAllCon implements Controller {
 	
 	request.setAttribute("list", list); // 객체바인딩!!!
 
-	 return "게시물 전체보기 페이지";
+	 return "list";
 	
 
    }

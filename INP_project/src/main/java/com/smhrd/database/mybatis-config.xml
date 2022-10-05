@@ -14,6 +14,8 @@
  <typeAlias type="com.smhrd.model.CommunityDTO" alias="Community"/>
  <typeAlias type="com.smhrd.model.MemberDTO" alias="Member"/>
  <typeAlias type="com.smhrd.model.CommentDTO" alias="Comment"/>
+ <typeAlias type="com.smhrd.model.PlaceDTO" alias="Place"/>
+ <typeAlias type="com.smhrd.model.peopleDTO" alias="people"/>
  </typeAliases>
  
  <!-- 2) DB 연결과 관련된 정의를 기술 -->
@@ -36,7 +38,9 @@
 <!--  만약 mapper 파일이 여러 개라면 mapper 태그를 여러 개 잡아주기! -->
      <mapper resource="com/smhrd/database/CommunityMapper.xml"/> 
      <mapper resource="com/smhrd/database/MemberMapper.xml"/> 
-     <mapper resource="com/smhrd/database/CommentMapper.xml"/> 
+     <mapper resource="com/smhrd/database/CommentMapper.xml"/>
+     <mapper resource="com/smhrd/database/PlaceMapper.xml"/> 
+     <mapper resource="com/smhrd/database/peopleMapper.xml"/> 
 </mappers>
  <!--  테이블이 여러 개이면 mapper 파일이 여러 개라면 mapper 태그를 여러 개 잡아주기! .이아니라 /로 -->
 

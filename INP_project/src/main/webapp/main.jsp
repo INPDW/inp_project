@@ -38,15 +38,15 @@
 			
 			<input type="text" id="id">
 			<input type="text" id ="pw">
-			<button id ="btn1">LOGIN</button> 
-			<button id = "btn2">JOIN</button> 
+			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
+			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
 			<div id = "foot">
 				
 					<li><a href="#">발자취</a></li>
 					<li><a href="#">유산 지도</a></li>
 					<li><a href="#">인물소개</a></li>
 					<li><a href="#">장소소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li><a href="SelectAll.do">커뮤니티</a></li>
 				
 					
 			</top1>

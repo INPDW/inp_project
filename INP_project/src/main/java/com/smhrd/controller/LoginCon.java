@@ -21,12 +21,12 @@ public class LoginCon implements Controller {
 		dto.setM_pw(m_pw);
 		// dto에 담음.
 
-		int row = dao.login(dto); // dao의 login기능 실행
-		if (row > 0) {
-			return "메인페이지"; // 로그인 성공 ~~~ 메인페이지로
+		MemberDTO row = dao.login(dto); // dao의 login기능 실행
+		if (row != null) {
+			return "main"; // 로그인 성공 ~~~ 메인페이지로
 
 		} else {
-			return "로그인페이지"; // 로그인 실패 ~~~ 다시 로그인 페이지로
+			return "login"; // 로그인 실패 ~~~ 다시 로그인 페이지로
 		}
 
 	}

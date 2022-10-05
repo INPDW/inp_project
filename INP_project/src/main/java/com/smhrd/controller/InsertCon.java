@@ -17,15 +17,15 @@ public class InsertCon implements Controller {
 		
 		
 		
-		String article_title = request.getParameter("alticle_title"); // 사용자가 쓴 제목
-		String article_content = request.getParameter("alticle_content"); // 사용자가 쓴 본문
+		String article_title = request.getParameter("article_title"); // 사용자가 쓴 제목
+		String article_content = request.getParameter("article_content"); // 사용자가 쓴 본문
 		String m_id = request.getParameter("m_id"); // 사용자 아이디
          
 		CommunityDTO dto = new CommunityDTO();
 		
 		dto.setArticle_title(article_title);
-		dto.setAlticle_content(article_content); 
-		dto.setM_id(m_id); // dto에 채워줌
+		dto.setArticle_content(article_content); 
+		dto.setM_id("admin"); // dto에 채워줌
 		
 		
 		CommunityDAO dao = new CommunityDAO();
