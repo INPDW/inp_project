@@ -24,6 +24,7 @@ import com.smhrd.controller.IDCheckCon;
 import com.smhrd.controller.InsertCon;
 import com.smhrd.controller.JoinCon;
 import com.smhrd.controller.LoginCon;
+import com.smhrd.controller.PlaceAllCon;
 import com.smhrd.controller.SearchContentCon;
 import com.smhrd.controller.SearchTitleCon;
 import com.smhrd.controller.SelectAllCon;
@@ -61,7 +62,7 @@ public class FrontController extends HttpServlet {
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
 		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
-		
+		mappings.put("/PlaceAll.do", new PlaceAllCon());
 		
 	}
 

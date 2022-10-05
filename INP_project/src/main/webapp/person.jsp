@@ -47,13 +47,13 @@
 
 	<table>
 		<tr>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
@@ -63,14 +63,14 @@
 			<td>설명4</td>
 		</tr>
 		<tr>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/pic05.jpg" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img  src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
 			<td>설명5</td>
