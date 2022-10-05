@@ -65,7 +65,6 @@
             <h1 class="reply_list">댓글 목록</h1>
     <section class="reply-list">
         <table border="1" width="950" height="200">
-    
             <colgroup>
                 <col width="200px">
             </colgroup>

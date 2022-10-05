@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/css.css">
 
@@ -12,36 +12,36 @@
 
 	<div class="board_wrap">
         <div class="board_title">
-            <strong>Ä¿¹Â´ÏÆ¼</strong>
+            <strong>ì»¤ë®¤ë‹ˆí‹°</strong>
         </div>
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title">
                     <dl>
-                        <dt>Á¦¸ñ</dt>
-                        <dd><input type="text" placeholder="Á¦¸ñ ÀÔ·Â" value="±Û Á¦¸ñÀÌ µé¾î°¨"></dd>
+                        <dt>ì œëª©</dt>
+                        <dd><input type="text" placeholder="ì œëª© ìž…ë ¥" value="ê¸€ ì œëª©ì´ ë“¤ì–´ê°"></dd>
                     </dl>
                 </div>
                 <div class="info">
                     <dl>
-                        <dt>ÀÛ¼ºÀÚ</dt>
-                        <dd><input type="text" placeholder="ÀÛ¼ºÀÚ ÀÔ·Â" value="Ã¶¼ö"></dd>
+                        <dt>ìž‘ì„±ìž</dt>
+                        <dd><input type="text" placeholder="ìž‘ì„±ìž ìž…ë ¥" value="ì² ìˆ˜"></dd>
                     </dl>
                 </div>
                 <div class="cont">
-                    <textarea placeholder="³»¿ë ÀÔ·Â" style="font-size: 15px;">
-±Û ³»¿ëÀÌ µé¾î°¨
-±Û ³»¿ëÀÌ µé¾î°¨
-±Û ³»¿ëÀÌ µé¾î°¨
-±Û ³»¿ëÀÌ µé¾î°¨
-±Û ³»¿ëÀÌ µé¾î°¨
+                    <textarea placeholder="ë‚´ìš© ìž…ë ¥" style="font-size: 15px;">
+ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°
+ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°
+ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°
+ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°
+ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°
                     </textarea>
                 </div>
 
             </div>
             <div class="bt_wrap">
-                <a href="view.html" class="on">¼öÁ¤</a>
-                <a href="view.html">Ãë¼Ò</a>
+                <a href="view.jsp" class="on">ìˆ˜ì •</a>
+                <a href="view.jsp">ì·¨ì†Œ</a>
             </div>
         </div>
     </div>

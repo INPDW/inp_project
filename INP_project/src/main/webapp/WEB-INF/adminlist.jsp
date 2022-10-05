@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/css.css">
 
@@ -12,73 +12,55 @@
 
 	<div class="board_wrap">
         <div class="board_title">
-            <strong>Ä¿¹Â´ÏÆ¼</strong>
+            <strong>ì»¤ë®¤ë‹ˆí‹°</strong>
         </div>
-
-
-        
-            <div class="search-condition">
-                <div class="form-group">
-                    <label for="q_searchkey" class="sr-only"></label>
-                    <select name="q.searchkey" id="q.searchkey" class="select" style="width: 150px;">
-                        <option value>-- °Ë»ö¼±ÅÃ --</option>
-                        <option value="sj_1002"> Á¦¸ñ </option>
-                        <option value="registernm_1001">ÀÛ¼ºÀÚ</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="q_searchval" class="sr-only"></label>
-                    <input type="text" name="q_searchval" id="q_searchval"
-                    value class="form-control" placeholder="°Ë»ö¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.">
-                </div>
-                
-                <button type="button" class="btn" >°Ë»ö</button>
-                
-            </div>
-            
-        
-
         <div class="board_write_wrap">
             <div class="board_list">
                 <div class="top">
-                    <div class="num">¹øÈ£</div>
-                    <div class="title">Á¦¸ñ</a></div>
-                    <div class="writer">ÀÛ¼ºÀÚ</div>
-                    <div class="date">µî·ÏÀÏ</div>
-                    <div class="count">Á¶È¸¼ö</div>
+                	<div><input type="checkbox" class="allcheck"></div>
+                    <div class="num">ë²ˆí˜¸</div>
+                    <div class="title">ì œëª©</a></div>
+                    <div class="writer">ìž‘ì„±ìž</div>
+                    <div class="date">ë“±ë¡ì¼</div>
+                    <div class="count">ì¡°íšŒìˆ˜</div>
                 </div>
                 <div>
+                	<div><input type="checkbox" class="check"></div>
                     <div class="num">5</div>
-                    <div class="title"><a href="view.html">±Û Á¦¸ñ µé¾î°¨</a></div>
-                    <div class="writer">Ã¶¼ö</div>
+                    <div class="title"><a href="view.html"> ë“¤ì–´ê°</a></div>
+                    <div class="writer">ì² ìˆ˜</div>
                     <div class="date">2022.9.30</div>
                     <div class="count">33</div>
                 </div>
                 <div>
+                	<div><input type="checkbox" class="check"></div>
                     <div class="num">4</div>
-                    <div class="title"><a href="view.html">±Û Á¦¸ñ µé¾î°¨</a></div>
-                    <div class="writer">Ã¶¼ö</div>
+                    <div class="title"><a href="view.html">ê¸€ ì œëª© ë“¤ì–´ê°</a></div>
+                    <div class="writer">ì² ìˆ˜</div>
                     <div class="date">2022.9.30</div>
                     <div class="count">33</div>
                 </div>
                 <div>
+                	<div><input type="checkbox" class="check"></div>
                     <div class="num">3</div>
-                    <div class="title"><a href="view.html">±Û Á¦¸ñ µé¾î°¨</a></div>
-                    <div class="writer">Ã¶¼ö</div>
+                    <div class="title"><a href="view.html">ê¸€ ì œëª© ë“¤ì–´ê°</a></div>
+                    <div class="writer">ì² ìˆ˜</div>
                     <div class="date">2022.9.30</div>
                     <div class="count">33</div>
                 </div>
                 <div>
+                	<div><input type="checkbox" class="check"></div>
                     <div class="num">2</div>
-                    <div class="title"><a href="view.html">±Û Á¦¸ñ µé¾î°¨</a></div>
-                    <div class="writer">Ã¶¼ö</div>
+                    <div class="title"><a href="view.html">ê¸€ ì œëª© ë“¤ì–´ê°</a></div>
+                    <div class="writer">ì² ìˆ˜</div>
                     <div class="date">2022.9.30</div>
                     <div class="count">33</div>
                 </div>
                 <div>
+                	<div><input type="checkbox" class="check"></div>
                     <div class="num">1</div>
-                    <div class="title"><a href="view.html">±Û Á¦¸ñ µé¾î°¨</a></div>
-                    <div class="writer">Ã¶¼ö</div>
+                    <div class="title"><a href="view.html">ê¸€ ì œëª© ë“¤ì–´ê°</a></div>
+                    <div class="writer">ì² ìˆ˜</div>
                     <div class="date">2022.9.30</div>
                     <div class="count">33</div>
                 </div>
@@ -95,12 +77,38 @@
                 <a href="#" class="bt last">>></a>
             </div>
             <div class="bt_wrap">
-                <a href="write.html" class="on">±Û¾²±â</a>
-                <a href="edit.html">¼öÁ¤</a>
-                <a href="adminlist.html">°ü¸®ÀÚ ¼öÁ¤</a>
+                <a href="write.html" class="on">ê¸€ì“°ê¸°</a>
+                <button type="button" class="del">ì‚­ì œ</button>
+                
             </div>
         </div>
     </div>
+    <script>
+        var allcheck = document.querySelector(".allcheck");
+        var list = document.querySelectorAll(".check");
+        var del = document.querySelector(".del");
+
+        allcheck.onclick = () => {
+            if(allcheck.checked) {
+                for(var i=0; i<list.length; i++){
+                    list[i].checked = true;
+                }
+            }else {
+                for(var i=0; i<list.length; i++){
+                    list[i].checked = false;
+                }
+            }
+        }
+
+        del.onclick = () => {
+            for(var i =0; i<list.length; i++){
+                if(list[i].checked){
+                    list[i].parentElement.parentElement.remove();
+                }
+            }
+        }
+
+    </script>
 
 </body>
 </html>

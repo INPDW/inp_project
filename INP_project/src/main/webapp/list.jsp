@@ -43,7 +43,7 @@
             <div class="board_list">
                 <div class="top">
                     <div class="num">번호</div>
-                    <div class="title">제목</div>
+                    <div class="title">제목</a></div>
                     <div class="writer">작성자</div>
                     <div class="date">등록일</div>
                     <div class="count">조회수</div>

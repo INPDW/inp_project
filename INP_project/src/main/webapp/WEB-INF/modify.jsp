@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/modify.css">
 
@@ -13,17 +13,17 @@
 	<center>
   
     <form action="domodify" method="POST" class="modifyForm" onsubmit="DomodifyForm__submit(this);">                                                                                        
-        <h2>Á¤º¸¼öÁ¤</h2>
+        <h2>ì •ë³´ìˆ˜ì •</h2>
 
         <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="ºñ¹Ð¹øÈ£">
+          <input name="loginPw" type="password" class="pw" placeholder="ë¹„ë°€ë²ˆí˜¸">
         </div>
 
         <div class="textForm">
-            <input name="nickname" type="text" class="nickname" placeholder="´Ð³×ÀÓ">
+            <input name="nickname" type="text" class="nickname" placeholder="ë‹‰ë„¤ìž„">
           </div>
     
-        <input type="submit" class="btn" value="¼öÁ¤ÇÏ±â"/>
+        <input type="submit" class="btn" value="ìˆ˜ì •í•˜ê¸°"/>
       </form>
 
     </center>

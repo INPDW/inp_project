@@ -1,5 +1,3 @@
-@charset "EUC-KR";
-
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +56,12 @@ a {
     border: 1px solid #000;
     border-radius: 2px;
     font-size: 1.4rem;
+    position:relative;
+    right: -10px;
+}
+
+.bt_wrap #on3 {
+    display: none;
 }
 
 .bt_wrap a:first-child {
@@ -67,6 +71,7 @@ a {
 .bt_wrap a.on {
     background: #000;
     color: #fff;
+    display: "";
 }
 
 .bt_wrap .del {
@@ -76,6 +81,99 @@ a {
     padding: 5px;
 }
 
+.reply {
+    margin-top: 200px;
+    border: 2px solid lightgray;
+    padding: 15px;
+    position: relative;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.reply h1{
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.reply-form div input[type="text"] {
+    position: relative;
+    bottom: -10px;
+    right: -20px;
+    width: 150px;
+    font-weight: 100px;
+    padding: 3px 100px;
+    text-align: start;
+    font-size: 15px;
+}
+
+.reply-form div textarea {
+    position: relative;
+    bottom: -15px;
+    right: -20px;
+    width: 650px;
+    font-weight: 100px;
+    padding: 10px 100px;
+    font-size: 15px;
+}
+
+.reply-form div input[type="submit"] {
+    position: relative;
+    font-size: 14px;
+    bottom: 3px;
+    width: 50px;
+    left: 30px;
+    padding: 10px;
+}
+
+.reply-form > form > div:not(:last-child) {
+    margin-bottom:5px;
+}
+
+.reply-list > table {
+    border:none;
+}
+
+.reply-list > table th {
+    display:none;
+    
+}
+
+.reply-list > table td {
+    border:none;
+    position: relative;
+    bottom: -20px;
+    right: -13px;
+    font-size: 12px;
+}
+
+.reply-list > table tr:nth-child(2n+1) {
+    background-color:rgba(0,0,0,0.06);
+}
+
+.reply-list > table td:first-child {
+    font-weight:bold;
+    position: relative;
+    bottom: -20px;
+    right: -15px;
+}
+
+.reply-list > table td:first-child::after {
+    content:" : ";
+    font-weight:bold;
+}
+
+.reply .reply_list {
+    position: relative;
+    font-size: 30px;
+    bottom: -10px;
+}
+
+.reply-list .table {
+    bottom: 40px;
+}
+
 .board_list {
     width: 900px;
     border-top: 1px solid #000;
@@ -83,7 +181,7 @@ a {
 
 .board_list > div {
     border-bottom: 2px solid #ddd;
-    font-size: 0;
+    font-size: 20;
 }
 
 .board_list > div.top {
@@ -145,7 +243,7 @@ a {
     text-align: center;
     font-size: 0;
     position: absolute;
-    left: 750px;
+    left: 800px;
 }
 
 .board_page a {
@@ -178,6 +276,69 @@ a {
 
 .board_page a:first-child {
     border-left: 1px solid #ddd;
+}
+
+
+.board_page1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    left: 800px;
+    bottom: -200px;
+}
+
+.board_page1 a {
+    display: inline-block;
+    width:  32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    border-left: 0;
+    line-height: 100%;
+}
+
+.board_page1 a.bt {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page1 a.num {
+    padding-top: 9px;
+    font-size: 1.4rem;
+}
+
+.board_page1 a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.board_page1 a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+
+.container {
+    position: relative;
+    left: 600px;
+    top: -10px;
+    padding: 10px;
+}
+
+.form-control {
+    width: 80px;
+    font-size: 18px;
+}
+.form-control1 {
+    width: 150px;
+    font-size: 18px;
+}
+.btn {
+    width: 40px;
+    font-size: 15px;
 }
 
 .board_view {

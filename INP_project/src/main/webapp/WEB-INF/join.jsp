@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,29 +16,29 @@
 	<center>
   
     <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this);">                                                                                        
-        <h2>»∏ø¯∞°¿‘</h2>
+        <h2>ÌöåÏõêÍ∞ÄÏûÖ</h2>
 
         <div class="textForm">
-            <input name="loginId" type="text" class="id" placeholder="æ∆¿Ãµ">
+            <input name="loginId" type="text" class="id" placeholder="ÏïÑÏù¥Îîî">
         </div>
 
         <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="∫Òπ–π¯»£">
+          <input name="loginPw" type="password" class="pw" placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏">
         </div>
     
         <div class="textForm">
-          <input name="nickname" type="text" class="nickname" placeholder="¥–≥◊¿”">
+          <input name="nickname" type="text" class="nickname" placeholder="ÎãâÎÑ§ÏûÑ">
         </div>
 
         <div class="idover" >
-          <input type="button" value="¡ﬂ∫π»Æ¿Œ">
+          <input type="button" value="Ï§ëÎ≥µÌôïÏù∏">
         </div>
 
         <div class="nickover">
-          <input type="button" value="¡ﬂ∫π»Æ¿Œ">
+          <input type="button" value="Ï§ëÎ≥µÌôïÏù∏">
         </div>
 
-        <input type="submit" class="btn" value="∞°¿‘«œ±‚">
+        <input type="submit" class="btn" value="Í∞ÄÏûÖÌïòÍ∏∞">
       </form>
 
     </center>

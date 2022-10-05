@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/login.css">
 
@@ -13,17 +13,17 @@
 	<center>
   
     <form action="dologin" method="POST" class="loginForm" onsubmit="DologinForm__submit(this);">                                                                                        
-        <h2>∑Œ±◊¿Œ</h2>
+        <h2>Î°úÍ∑∏Ïù∏</h2>
 
         <div class="textForm">
-            <input name="loginId" type="text" class="id" placeholder="æ∆¿Ãµ">
+            <input name="loginId" type="text" class="id" placeholder="ÏïÑÏù¥Îîî">
         </div>
 
         <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="∫Òπ–π¯»£">
+          <input name="loginPw" type="password" class="pw" placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏">
         </div>
     
-        <input type="submit" class="btn" value="∑Œ±◊¿Œ">
+        <input type="submit" class="btn" value="Î°úÍ∑∏Ïù∏">
       </form>
 
     </center>

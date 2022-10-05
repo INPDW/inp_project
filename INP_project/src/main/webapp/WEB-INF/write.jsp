@@ -1,41 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/css.css">
 
 </head>
 <body>
 
-	<div class="board_wrap">
+	 <div class="board_wrap">
         <div class="board_title">
-            <strong>ƒøπ¬¥œ∆º</strong>
+            <strong>Ïª§ÎÆ§ÎãàÌã∞</strong>
         </div>
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title">
                     <dl>
-                        <dt>¡¶∏Ò</dt>
-                        <dd><input type="text" placeholder="¡¶∏Ò ¿‘∑¬"></dd>
+                        <dt>Ï†úÎ™©</dt>
+                        <dd><input type="text" placeholder="Ï†úÎ™© ÏûÖÎ†•"></dd>
                     </dl>
                 </div>
                 <div class="info">
                     <dl>
-                        <dt>¿€º∫¿⁄</dt>
-                        <dd><input type="text" placeholder="¿€º∫¿⁄ ¿‘∑¬"></dd>
+                        <dt>ÏûëÏÑ±Ïûê</dt>
+                        <dd><input type="text" placeholder="ÏûëÏÑ±Ïûê ÏûÖÎ†•"></dd>
                     </dl>
                 </div>
                 <div class="cont">
-                    <textarea placeholder="≥ªøÎ ¿‘∑¬"></textarea>
+                    <textarea placeholder="ÎÇ¥Ïö© ÏûÖÎ†•"></textarea>
                 </div>
 
             </div>
             <div class="bt_wrap">
-                <a href="view.html" class="on">µÓ∑œ</a>
-                <a href="list.html">√Îº“</a>
+                <a href="view.html" class="on">Îì±Î°ù</a>
+                <a href="list.html">Ï∑®ÏÜå</a>
             </div>
         </div>
     </div>
