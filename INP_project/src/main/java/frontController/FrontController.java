@@ -29,6 +29,7 @@ import com.smhrd.controller.IDCheckCon;
 import com.smhrd.controller.InsertCon;
 import com.smhrd.controller.JoinCon;
 import com.smhrd.controller.LoginCon;
+import com.smhrd.controller.PlaceAllCon;
 import com.smhrd.controller.SearchContentCon;
 import com.smhrd.controller.SearchTitleCon;
 import com.smhrd.controller.SelectAllCon;
@@ -64,6 +65,7 @@ public class FrontController extends HttpServlet {
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
 		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
+<<<<<<< HEAD
 		mappings.put("/GoJoin.do", new GoJoinCon());
 		mappings.put("/GoLogin.do", new GoLoginCon());
 		mappings.put("/GoView.do", new GoViewCon());
@@ -73,6 +75,9 @@ public class FrontController extends HttpServlet {
 		
 		mappings.put("/IDCheck.do", new IDCheckCon());
 		
+=======
+		mappings.put("/PlaceAll.do", new PlaceAllCon());
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
 		
 	}
 

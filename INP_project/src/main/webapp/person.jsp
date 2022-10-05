@@ -1,16 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-    <!-- jstl 사용전 선언 -->
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>person</title>
 
+<title>person</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/person.css" />
-<noscript> <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 
 </head>
@@ -48,13 +47,13 @@
 
 	<table>
 		<tr>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
+			<td><a href="./person_detail.jsp"><img
 					src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
@@ -64,14 +63,14 @@
 			<td>설명4</td>
 		</tr>
 		<tr>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
-			<td><a href="./person_detail.html"><img
-					src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/pic05.jpg" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img  src="./images/kim.png" width="200" height="200"></a></td>
+			<td><a href="./person_detail.jsp">
+			<img src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
 			<td>설명5</td>

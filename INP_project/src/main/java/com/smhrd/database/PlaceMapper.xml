@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sql구문을 설정하는 파일 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace : DAO 파일명을 원칙으로 작성한다. mapper 파일이 여러개였을 때 namespace는 절대 중복되면 
+	안된다. -->
+<mapper namespace="com.smhrd.model.PlaceDAO">
+	<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 풀네임을 작성하고 싶지않다면 mybatis-config.xml에 
+		별칭을 설정 -->
+	
+	<select id="selectAll" resultType="Place">
+		select * from inp_place      <!-- 세미콜론X -->
+	</select>
+	<!-- insert, update, delete: 작성: parameterType (받아오는 값) select : resultType(되돌려줄 
+		결과값, 기본 자료형이아니라면 지정 ** parameter로 받아온 데이터는 #{필드명}값을 가져올 수있다. -->
+	<select id="select" resultType="Place">
+		select * from inp_community
+		where article_seq=#{alticle_seq}  <!-- 셀렉트 string 은 잘 잡아옴 파라미터타입 안써도 됌 -->
+	</select>
+
+
+	<select id ="searchname" parameterType="Place">
+		select * from inp_community
+		where article_title like '%{article_title}%'
+	</select>
+
+
+</mapper>
+ 
+ 
+ 
+ 
