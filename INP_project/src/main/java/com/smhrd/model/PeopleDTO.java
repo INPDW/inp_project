@@ -1,6 +1,6 @@
 package com.smhrd.model;
 
-public class peopleDTO {
+public class PeopleDTO {
 	
 	private String inp_seq;
 	private String inp_name;

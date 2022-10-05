@@ -9,7 +9,7 @@ import com.smhrd.database.SqlSessionManager;
 
 
 
-public class peopleDAO {
+public class PeopleDAO {
 
 	private SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSessionFactory();
 	

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+    
+    <%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,15 +44,15 @@
 			
 			<img src="./images/footlogo.png" alt="" id = "footlogo">
 			
-			<button id ="btn1">LOGIN</button> 
-			<button id = "btn2">JOIN</button> 
+			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
+			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
 			<div id = "foot">
 				
-					<li><a href="#">발자취</a></li>
-					<li><a href="#">유산 지도</a></li>
-					<li><a href="#">인물소개</a></li>
-					<li><a href="#">장소소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li><a href="GoFootmap.do">발자취</a></li>
+					<li><a href="GoCulmap.do">유산 지도</a></li>
+					<li><a href="GoPeople.do">인물소개</a></li>
+					<li><a href="GoPlace.do">장소소개</a></li>
+					<li><a href="SelectAll.do">커뮤니티</a></li>
 			</div>
 				</div>
 			</top1>

@@ -19,10 +19,14 @@ import com.smhrd.controller.ComInsertCon;
 import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
+import com.smhrd.controller.GoCulmap;
 import com.smhrd.controller.GoEditCon;
+import com.smhrd.controller.GoFootmap;
 import com.smhrd.controller.GoJoinCon;
 import com.smhrd.controller.GoListCon;
 import com.smhrd.controller.GoLoginCon;
+import com.smhrd.controller.GoPeopleCon;
+import com.smhrd.controller.GoPlaceCon;
 import com.smhrd.controller.GoViewCon;
 import com.smhrd.controller.GoWriteCon;
 import com.smhrd.controller.IDCheckCon;
@@ -65,19 +69,18 @@ public class FrontController extends HttpServlet {
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
 		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
-
 		mappings.put("/GoJoin.do", new GoJoinCon());
 		mappings.put("/GoLogin.do", new GoLoginCon());
 		mappings.put("/GoView.do", new GoViewCon());
 		mappings.put("/GoWrite.do", new GoWriteCon());
 		mappings.put("/GoList.do", new GoListCon());
 		mappings.put("/GoEdit.do", new GoEditCon());
+		mappings.put("/GoFootmap.do", new GoFootmap());
+		mappings.put("/GoCulmap.do", new GoCulmap());
+		mappings.put("/GoPeople.do", new GoPeopleCon());
+		mappings.put("/GoPlace.do", new GoPlaceCon());
 		
 		mappings.put("/IDCheck.do", new IDCheckCon());
-		
-
-		mappings.put("/PlaceAll.do", new PlaceAllCon());
-
 		
 	}
 
