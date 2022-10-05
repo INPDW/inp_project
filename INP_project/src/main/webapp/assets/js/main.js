@@ -73,6 +73,21 @@
 			  });
 
 
+			  $('#image2').hover(function() {
+				$('#content2').fadeIn("slow");
+			  }, function(){
+				$('#content2').fadeOut("slow");
+			  });
+
+			  $('#image3').hover(function() {
+				$('#content3').fadeIn("slow");
+			  }, function(){
+				$('#content3').fadeOut("slow");
+			  });
+
+
+
+
 
 
 	// Header.
