@@ -45,7 +45,18 @@
 
             </div>
             <div class="bt_wrap">
-                <a><input type="submit" class="btn" value="등록"></a>
+               <input type="submit" class="btn" value="등록" style="min-width: 80px;
+       min-width: 90px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    position: relative;
+    left: -18px;
+    color: white;
+    top: 0px;
+    background-color: black;">
                 <a href="GoList.do">취소</a>
             </div>
                 </form>
