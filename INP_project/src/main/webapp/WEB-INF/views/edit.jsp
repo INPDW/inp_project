@@ -16,11 +16,12 @@
         </div>
         <div class="board_write_wrap">
             <div class="board_write">
-                  	  <form action="Update.do">
+                  	  <form action="Update.do" method = "post">
                 <div class="title">
+                <dd><input type="text" placeholder="제목 입력" name="article_seq" style="display: none" value="${dto.article_seq}"></dd>
                     <dl>
                         <dt>제목</dt>
-                        <dd><input type="text" placeholder="제목 입력" id="article_title" value="${dto.article_title}"></dd>
+                        <dd><input type="text" placeholder="제목 입력" name="article_title" value="${dto.article_title}"></dd>
                     </dl>
                 </div>
                 <div class="info">
@@ -30,10 +31,8 @@
                     </dl>
                 </div>
                 <div class="cont">
-                    <textarea placeholder="내용 입력" id="article_content" style="font-size: 15px;">
-
+                    <textarea placeholder="내용 입력" name="article_content" style="font-size: 15px;">
 					${dto.article_content}
-
                     </textarea>
                 </div>
             <div class="bt_wrap">

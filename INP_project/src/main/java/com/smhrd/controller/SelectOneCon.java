@@ -11,12 +11,13 @@ public class SelectOneCon implements Controller {
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 
-
+		CommunityDTO dto = new CommunityDTO();
 	
 		String article_seq = request.getParameter("article_seq"); // 사용자가 클릭한 게시물 번호 받기
 
 		CommunityDAO dao = new CommunityDAO();
-		CommunityDTO dto = dao.selectOne(article_seq); // dao의 selectOne 기능 실행
+		
+		dto = dao.selectOne(article_seq); // dao의 selectOne 기능 실행
 
 		request.setAttribute("dto", dto); // 객체바인딩!!! --> scope 네이밍, 담아온 조회 결과
 		// 3. BoardContent.jsp로 페이지를 이동하면서 조회해온 데이터 보내주기

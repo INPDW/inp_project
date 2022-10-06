@@ -20,6 +20,20 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	
+	
+	<style type="text/css">
+	 .gmnoprint, .gm-control-active.gm-fullscreen-control {
+            display: none;
+        }
+	
+	 </style>      <!-- 위성/지도 안나오게 하는 것  -->
+	 
+	 
+
+
+
+        
 	</head>
 
 
@@ -56,18 +70,23 @@
 
     </div>
 
-		<div id="maps" style="border: solid;width:1900px; height:700px; "></div>
-
-		
-		
-		
-		
-		
-		
+	
 		</div>
 			
 			
+    <h3>문화유산 지도</h3>
+    <!--The div element for the map -->
+    <div id="map"style="border: solid; width:1900px; height:700px;"></div>
+
+<script window.initMap = initMap;
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLI4aEZqQAP3F4eQUFhl9tJ2Q0VwM_HeA&callback=initMap&libraries=&v=weekly"
+        async>
+  		 </script>  
+  		 <!-- 스크립트 바디 밑에 들어 있어야함  -->
+
 			
+			
+		</div>	
 			
 
 

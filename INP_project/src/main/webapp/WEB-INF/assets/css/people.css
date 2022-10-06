@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 		display: inline;
 		position: relative;
 		width: 200px;
-		margin-left: 1100px;
+		margin-left: 5000px;
 		top: 30px;
 		
 		font-size: medium;
@@ -121,10 +121,27 @@ blockquote, q {
 		content: none;
 	}
 
+
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    width:500px; 
+    margin: auto;
 }
+
+table, th {
+    border-collapse : collapse;
+    border : 1px solid black;
+};
+
+
+table, td {
+   height :0;
+ };
+   
+ table, div{
+ 	height: 100%;
+ 
+ }
 
 body {
 	-webkit-text-size-adjust: none;
@@ -8470,3 +8487,13 @@ input, select, textarea {
 		font-size: medium;
 		background-color: rgb(116, 116, 116);
         }
+        
+        div.s{
+       	 position: fixed;
+		 top: 0;
+		 /* width: 100% */
+		 left: 0;
+		 right: 0;		
+		/* 생략 */
+				}
+   
