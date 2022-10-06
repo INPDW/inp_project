@@ -20,9 +20,7 @@
 
             <form action ="GoEdit.do" method = "post">
 
-
    <div class="board_wrap">
-
 
 	<div class="board_wrap">
 
@@ -36,8 +34,8 @@
 
 
                   ${dto.article_title}
+                   <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
 
-                	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
 
                 </div>
                 <div class="info">

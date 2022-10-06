@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
@@ -15,12 +16,16 @@ public class InsertCon implements Controller {
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		
+		HttpSession session = request.getSession();
 		
 		
 		String article_title = request.getParameter("article_title"); // 사용자가 쓴 제목
 		String article_content = request.getParameter("article_content"); // 사용자가 쓴 본문
-		String m_id = request.getParameter("m_id"); // 사용자 아이디
+	
+		//session.setAttribute("m_id", m_id);
+		// String m_id = ;
          
+		//System.out.println(m_id);
 		CommunityDTO dto = new CommunityDTO();
 		
 		dto.setArticle_title(article_title);
