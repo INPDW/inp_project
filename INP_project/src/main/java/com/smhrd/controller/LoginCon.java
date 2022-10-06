@@ -29,7 +29,8 @@ public class LoginCon implements Controller {
 		MemberDTO row = dao.login(dto); // dao의 login기능 실행
 		if (row != null) {
 
-		
+			
+			session.setAttribute("m_id", m_id);
 
 			return "main"; // 로그인 성공 ~~~ 메인페이지로
 			
