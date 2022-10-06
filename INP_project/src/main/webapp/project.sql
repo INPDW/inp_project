@@ -1,1 +1,0 @@
-select * from inp_member;

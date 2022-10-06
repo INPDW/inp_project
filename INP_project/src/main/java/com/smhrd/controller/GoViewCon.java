@@ -21,7 +21,7 @@ public class GoViewCon implements Controller {
 		System.out.println(article_seq);
 		System.out.println(article_title);
 		System.out.println(article_content);
-		System.out.println(m_id);
+//		System.out.println(m_id);
 		
 		
 		

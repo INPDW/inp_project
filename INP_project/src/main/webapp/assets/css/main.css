@@ -72,12 +72,16 @@ footer, header, hgroup, menu, nav, section {
 	}
 	
 	#party{
+	
 	position: relative;
 	width: 260px;
 	top: 80px;
 	right: -1100px;
 	
 	}
+	
+	
+
 
 	#btn1{
 		display: inline;
@@ -212,6 +216,8 @@ input::-moz-focus-inner {
  
  
  }
+ 
+ 
  
  
   
