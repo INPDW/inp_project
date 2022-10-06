@@ -1,3 +1,5 @@
+
+
       var cul = document.getElementsByClassName("cul");
 
       function handleClick(event) {
@@ -26,13 +28,16 @@
 
       init();
      function initMap() {
+	
   const seo = { lat: 23.1187846
 , lng: 113.2954906};
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
     center: { lat: 23.1187846
 , lng: 113.2954906},
+  
   });
+     
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
@@ -44,11 +49,12 @@
     "안창호</a> " +
     "</p>" +
     "</div>" +
-    "</div>";
+    "</div>" ;
+
             //인포윈도우
             
         const infowindow = new google.maps.InfoWindow({
-    content: contentString,
+    content: contentString, 
   });
 
   var customicon = 'https://th.bing.com/th/id/R.5e397f27b80da832f7589f434cf07ee1?rik=9Pvb2DeLVu5uLQ&riu=http%3a%2f%2fst2.depositphotos.com%2f2850099%2f7036%2fv%2f450%2fdepositphotos_70366819-Map-pointer-icon-flat-location.jpg&ehk=0T1%2fVX9FWY5L%2fxSEPCV7UtCyHKre2b7KKE1H%2bwrbmFg%3d&risl=&pid=ImgRaw&r=0'
@@ -115,5 +121,3 @@ $(".cul").on('click', function(e){
     
 $(document).ready(function(){    $("#maps").load("maps.html");
 });
-
-	
