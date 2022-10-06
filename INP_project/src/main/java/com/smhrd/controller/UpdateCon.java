@@ -24,7 +24,6 @@ public class UpdateCon implements Controller {
 		String article_content = request.getParameter("article_content"); // 사용자가 입력한 본문
 		String article_seq = request.getParameter("article_seq"); // seq 어떻게 빼올지
 		
-		System.out.println("UpdateCon"+article_content);
 		
 		CommunityDTO dto = new CommunityDTO();
 		dto.setArticle_title(article_title);	

@@ -136,13 +136,18 @@
 
     
     
-     <li><input type="submit" class="btn" value="글 삭제" style="
+     <li><button onclick = "location.href='Delete.do?article_seq'=${dto.article_seq}'"
+     style="
       width: 105px;
     height: 41px;
     position: relative;
     left: 455px;
     top: -82px;"
-}></li>
+}>   글 삭제</button>
+    
+    
+    </li>
+</li>
 
             </div>
         </div>
