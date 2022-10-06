@@ -25,6 +25,7 @@ import com.smhrd.controller.GoFootmap;
 import com.smhrd.controller.GoJoinCon;
 import com.smhrd.controller.GoListCon;
 import com.smhrd.controller.GoLoginCon;
+import com.smhrd.controller.GoMainCon;
 import com.smhrd.controller.GoPeopleCon;
 import com.smhrd.controller.GoPlaceCon;
 import com.smhrd.controller.GoViewCon;
@@ -79,6 +80,7 @@ public class FrontController extends HttpServlet {
 		mappings.put("/GoCulmap.do", new GoCulmap());
 		mappings.put("/GoPeople.do", new GoPeopleCon());
 		mappings.put("/GoPlace.do", new GoPlaceCon());
+		mappings.put("/GoMain.do", new GoMainCon());
 		
 		mappings.put("/IDCheck.do", new IDCheckCon());
 		
