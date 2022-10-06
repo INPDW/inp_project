@@ -5,29 +5,39 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace : DAO 파일명을 원칙으로 작성한다. mapper 파일이 여러개였을 때 namespace는 절대 중복되면 
 	안된다. -->
-<mapper namespace="com.smhrd.model.peopleDAO">
+<mapper namespace="com.smhrd.model.MemberDAO">
 	<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 풀네임을 작성하고 싶지않다면 mybatis-config.xml에 
 		별칭을 설정 -->
 	
-	
-	
-	<select id="selectAll" resultType="Community">
-		select * from inp_community      <!-- 세미콜론X -->
-	</select>
 	<!-- insert, update, delete: 작성: parameterType (받아오는 값) select : resultType(되돌려줄 
 		결과값, 기본 자료형이아니라면 지정 ** parameter로 받아온 데이터는 #{필드명}값을 가져올 수있다. -->
-	<select id="select" resultType="Community">
-		select * from inp_community
-		where article_seq=#{alticle_seq}  <!-- 셀렉트 string 은 잘 잡아옴 파라미터타입 안써도 됌 -->
+
+
+
+	<insert id="join" parameterType="Member">
+		insert into inp_member(m_id, m_pw, m_nick)
+		values(#{m_id}, #{m_pw}, #{m_nick})
+	</insert>
+
+
+
+	<select id="login" resultType="Member">
+		select * from inp_member
+		where m_id = #{m_id} and m_pw = #{m_pw}  
 	</select>
 
-
-
-	<select id ="searchTitle" parameterType="Community">
-		select * from inp_community
-		where article_title like '%{article_title}%'
+	<update id="update" parameterType="Member">
+		UPDATE inp_member
+		SET m_pw = #{m_pw}, m_nick=#{m_nick}
+		Where m_id = #{m_id}
+	</update>
+	
+	<select id="idcheck" resultType="Member">
+		select * from imp_member
+		where m_id = #{m_id}
 	</select>
 
+	
 
 </mapper>
  
