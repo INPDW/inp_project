@@ -73,6 +73,21 @@ public class CommunityDAO {
 
 	}
 
+	public int cnt(CommunityDTO  CommunityDTO) {
+		int result = 0;
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		// 2.특정한 sql 구문 골라서 실행
+		result = sqlSession.update("com.smhrd.model.CommunityDAO.update", CommunityDTO);
+
+		// 3. 빌린 Connection 돌려주기
+		sqlSession.close();
+
+		return result;
+		
+		
+	}
+	
 	public int delete(String alticle_seq) {
 		int result = 0;
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
@@ -101,6 +116,8 @@ public class CommunityDAO {
 		sqlSession.close();
 		return list;
 	}
+	
+	
 
 	// sql -> select -> sqlsession(두개 -> 우리가 채워줘야되는 게 있음)
 	// 하나 -> 채워줘야될게 없음

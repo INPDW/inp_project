@@ -9,7 +9,7 @@
 	<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 풀네임을 작성하고 싶지않다면 mybatis-config.xml에 
 		별칭을 설정 -->
 	
-	
+
 	
 	
 

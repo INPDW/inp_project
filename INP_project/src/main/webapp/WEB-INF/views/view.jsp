@@ -18,6 +18,7 @@
 </head>
 <body>
 
+            <form action ="GoEdit.do" method = "post">
 	<div class="board_wrap">
         <div class="board_title">
             <strong>커뮤니티</strong>
@@ -26,15 +27,19 @@
             <div class="board_view">
                 <div class="title">
                 	${dto.article_title}
+                	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
                 </div>
                 <div class="info">
                     <dl>
                         <dt>번호</dt>
                         <dd>${dto.article_seq }</dd>
+                        <input type="text" name="article_seq" style="display: none" value="${dto.article_seq}">
+                        
                     </dl>
                     <dl>
                         <dt>작성자</dt>
                         <dd>${dto.m_id}</dd>
+                        <input type="text" name="m_id" style="display: none" value="${dto.m_id}">
                     </dl>
                     <dl>
                         <dt>작성일</dt>
@@ -47,15 +52,17 @@
                 </div>
                 <div class="cont">
                     ${dto.article_content}
+                    <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
                     
                 </div>
             </div>
             <div class="bt_wrap">
                 <a href="SelectAll.do" class="on">목록</a>
-                <a href="GoEdit.do">수정</a>
+                <a><input type="submit" class="btn" value="수정"></a>
             </div>
         </div>
     </div>
+            </form>
 
 </body>
 </html>

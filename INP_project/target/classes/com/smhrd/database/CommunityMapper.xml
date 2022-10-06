@@ -54,6 +54,13 @@
 		where a.m_id = b.m_id
 	</select>
 	
+	<update id = "cnt" parameterType="Community">
+		update inp_community
+		set article_cnt + 1
+		where article_seq = #{article_seq}		
+	</update>
+	
+	
 	
 </mapper>
  

@@ -15,6 +15,7 @@
  <typeAlias type="com.smhrd.model.MemberDTO" alias="Member"/>
  <typeAlias type="com.smhrd.model.CommentDTO" alias="Comment"/>
  <typeAlias type="com.smhrd.model.PlaceDTO" alias="Place"/>
+ <typeAlias type="com.smhrd.model.PeopleDTO" alias="People"/>
  <!--  <typeAlias type="com.smhrd.model.PeopleDTO" alias="People"/>-->
  </typeAliases>
  
