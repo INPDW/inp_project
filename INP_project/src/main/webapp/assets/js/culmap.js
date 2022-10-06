@@ -45,7 +45,7 @@ src="./js/jquery-3.6.1.min.js"
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h3 id="firstHeading" class="firstHeading">안창호 탄생지</h3>' +"<div>"+`<img src="http://oversea.i815.or.kr/getImage/?type=place_main&manageNo=CN00017">`+"<div>"+
+    '<h3 id="firstHeading" class="firstHeading">안창호 탄생지</h3>' +"<div>"+`<img src="http://oversea.i815.or.kr/getImage/?type=place_main&manageNo=CN00017"width="300" height="300">`+"<div>"+
     '<div id="bodyContent">' +
     "<p><b>안창호</b>, 독립운동가</p>" +
     '<p> <a href="https://ko.wikipedia.org/wiki/%EC%95%88%EC%B0%BD%ED%98%B8">' +
@@ -124,3 +124,4 @@ $(".cul").on('click', function(e){
     
 $(document).ready(function(){    $("#maps").load("maps.html");
 });
+
