@@ -42,6 +42,7 @@
      <mapper resource="com/smhrd/database/CommentMapper.xml"/>
      <mapper resource="com/smhrd/database/PlaceMapper.xml"/> 
      <mapper resource="com/smhrd/database/PeopleMapper.xml"/> 
+     <mapper resource="com/smhrd/database/RouteMapper.xml"/> 
 </mappers>
  <!--  테이블이 여러 개이면 mapper 파일이 여러 개라면 mapper 태그를 여러 개 잡아주기! .이아니라 /로 -->
 

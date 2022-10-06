@@ -18,6 +18,9 @@
         }
       }
 
+src="./js/jquery-3.6.1.min.js"
+
+
       function init() {
         for (var i = 0; i < cul.length; i++) {
           cul[i].addEventListener("click", handleClick);
