@@ -23,20 +23,32 @@
    <div class="board_wrap">
 
 	<div class="board_wrap">
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
         <div class="board_title">
             <strong>커뮤니티</strong>
         </div>
         <div class="board_write_wrap">
             <div class="board_view">
                 <div class="title">
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                    ${dto.article_title}
                    <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                 	${dto.article_title}
                 	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                 </div>
                 <div class="info">
                     <dl>
@@ -62,7 +74,10 @@
                 <div class="cont">
                     ${dto.article_content}
                     <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                     
                      <br><Br>
                     
@@ -109,7 +124,10 @@
                 <textarea rows="3" cols=20 wrap="hard" style="width: 1000px; height: 100px"></textarea>
                     
                     
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                     
                 </div>
                 
@@ -118,16 +136,22 @@
             </div>
             <div class="bt_wrap">
                 <a href="SelectAll.do" class="on">목록</a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
                 <li><input type="submit" class="btn" value="수정" style="
                      width: 105px;
     height: 41px;
     position: relative;
     left: 120px;
     top: -40px;" ></li>
+<<<<<<< HEAD
 
                
 
+=======
+>>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
             </div>
         </div>
     </div>
