@@ -18,7 +18,6 @@
 </head>
 <body>
 
-            <form action ="GoEdit.do" method = "post">
 
    <div class="board_wrap">
 
@@ -27,6 +26,8 @@
         <div class="board_title">
             <strong>커뮤니티</strong>
         </div>
+            <form action ="GoEdit.do" method = "post">
+        
         <div class="board_write_wrap">
             <div class="board_view">
                 <div class="title">
@@ -37,9 +38,7 @@
                    <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
 
 
-                 ${dto.article_title}
-                 
-                	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+   
 
                 </div>
                 <div class="info">
@@ -67,9 +66,12 @@
                     ${dto.article_content}
                     <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
 
-                    
 
                     </div>
+                    
+            </form>
+                    
+                    
                      <br><Br>
                     
                      <div class="comment" style = "
@@ -136,14 +138,13 @@
 
     
     
-     <li><button onclick = "location.href='Delete.do?article_seq'=${dto.article_seq}'"
+     <li><button onclick = "location.href='Delete.do?article_seq=${dto.article_seq}'"
      style="
       width: 105px;
     height: 41px;
     position: relative;
     left: 455px;
-    top: -82px;"
-}>   글 삭제</button>
+    top: -82px;">   글 삭제</button>
     
     
     </li>
@@ -152,7 +153,6 @@
             </div>
         </div>
     </div>
-            </form>
 
 </body>
 </html>
