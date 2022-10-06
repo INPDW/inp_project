@@ -50,14 +50,14 @@
 	</select>
 	
 	<select id = "nick" parameterType="Community">
-		select a.m_nick 
+		select a.m_nick
 		from inp_member a, inp_community b
-		where a.m_id = b.m_id
+		where a.m_id = b.m_id and a.m_id = '${m_id}'
 	</select>
 	
 	<update id = "cnt" parameterType="Community">
 		update inp_community
-		set article_cnt + 1
+		set article_cnt = article_cnt + 1
 		where article_seq = #{article_seq}		
 	</update>
 	

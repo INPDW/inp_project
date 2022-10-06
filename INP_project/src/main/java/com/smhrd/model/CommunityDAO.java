@@ -48,8 +48,8 @@ public class CommunityDAO {
 
 	}
 	
-	public CommunityDTO nick(String m_id) {
-		CommunityDTO result = null;
+	public String nick(String m_id) {
+		String result = null;
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		
@@ -73,12 +73,12 @@ public class CommunityDAO {
 
 	}
 
-	public int cnt(CommunityDTO  CommunityDTO) {
+	public int cnt(String alticle_seq) {
 		int result = 0;
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		// 2.특정한 sql 구문 골라서 실행
-		result = sqlSession.update("com.smhrd.model.CommunityDAO.update", CommunityDTO);
+		result = sqlSession.update("com.smhrd.model.CommunityDAO.cnt", alticle_seq);
 
 		// 3. 빌린 Connection 돌려주기
 		sqlSession.close();

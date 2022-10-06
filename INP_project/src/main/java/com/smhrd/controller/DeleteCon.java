@@ -9,10 +9,13 @@ public class DeleteCon implements Controller {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-		String alticle_seq = request.getParameter("alticle_seq"); // 글번호 가져오기
+		
+		String article_seq = request.getParameter("article_seq"); // 글번호 가져오기
+		
+	
 		
 		CommunityDAO dao = new CommunityDAO();
-		dao.delete(alticle_seq); // 삭제기능 실행
+		dao.delete(article_seq); // 삭제기능 실행
 		
 		
 
