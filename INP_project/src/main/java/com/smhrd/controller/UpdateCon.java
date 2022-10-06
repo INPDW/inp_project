@@ -23,7 +23,7 @@ public class UpdateCon implements Controller {
 		CommunityDAO dao = new CommunityDAO();
 		int row = dao.update(dto); // dao에 있는 update 기능 실행
 		if (row > 0) {
-			return "redirect:/GoView.do"; // row가 0보다 크면 정상 실행. 
+			return "redirect:/GoView.do?article_seq="+article_seq+"&article_title="+article_title+"&article_content="+article_content; // row가 0보다 크면 정상 실행. 
 			
 		}else {
 			return "redirect:/Update.do"; // 실패~~~~~ 

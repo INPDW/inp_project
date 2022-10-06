@@ -42,7 +42,7 @@
 		
 		<top1 class="top1">
 			
-			<img src="./images/footlogo.png" alt="" id = "footlogo">
+			<a href ="GoMain.do"><img src="./images/footlogo.png" alt="" id = "footlogo"></a>
 			
 			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
 			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 

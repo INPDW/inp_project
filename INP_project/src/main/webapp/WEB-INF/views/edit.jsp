@@ -36,8 +36,26 @@
                     </textarea>
                 </div>
             <div class="bt_wrap">
-                <a><input type="submit" class="btn" value="수정"></a>
-                <a href="GoView.do">취소</a>
+                <input type="submit" class="btn" value="수정" style="    width: 105px;
+    height: 41px;
+    position: relative;
+    left: 195px;
+    top: 88px;">
+                <a href="GoView.do" style="  display: inline-block; 
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    position: relative;
+    left: -114px;
+    color: white;
+    top: 88px;
+    background-color: black;"
+    
+}>취소</a>
             </div>
                   	  </form>
             </div>
