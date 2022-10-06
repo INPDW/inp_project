@@ -39,10 +39,17 @@
 	
 	<h1 id="party">~~~~~님 환영합니다!!</h1>
 
-		
+		<a href ="GoMain.do"><img src="./images/footlogo.png" alt="" id = "footlogo" style="
+	
+		position: relative;
+		top: -55px;
+		text-decoration-color : red;
+
+	
+		"></a>
 		<top1 class="top1">
 			
-			<a href ="GoMain.do"><img src="./images/footlogo.png" alt="" id = "footlogo"></a>
+			
 			
 			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
 			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
