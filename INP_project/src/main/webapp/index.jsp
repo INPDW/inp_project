@@ -30,10 +30,10 @@
 
 
 
-	<div id = size>
 
 	<body class="landing is-preload">
 	
+	<div id = size>
 	<div class ="S">
 			
 	
@@ -196,7 +196,7 @@
 						
 						<section class="spotlight">
 							<div class="image2"><img src="http://newsimg.hankookilbo.com/2020/04/29/202004291076016479_1.jpg" alt=""id='image2' /></div><div class="content2"id="content2">
-								<div id = 'textbox'>
+								<div id = 'textbox3'>
 너희에게도 만일 피가 있고 뼈가 있다면
 
 반드시 조선을 위해 용감한 투사가 되어라.

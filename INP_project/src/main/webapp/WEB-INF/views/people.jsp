@@ -1,42 +1,68 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-    <!-- jstl »ηΏλΐό Ό±Ύπ -->
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>person</title>
-
+	<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/person.css" />
-<noscript> <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<link rel="stylesheet" href="assets/css/main.css?after" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/> 
+
+
+		<title>μΈλ¬Όμ†κ°</title>
+	
+	
+		
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
 </head>
 
-<body>
-	
-	
-	<top1 class="top1">
-	
 
+
+
+
+
+
+
+
+	<body class="landing is-preload">
 	
-	<button id="btn1">LOGIN</button>
-	<button id="btn2">JOIN</button>
+	<div id = size>
+	<div class ="S">
+			
+	
+	<h1 id="party">~~~~~λ‹ ν™μν•©λ‹λ‹¤!!</h1>
 
-	<div id="foot">
-		<li><a href="#">ΉίΐΪΓλ</a></li>
-		<li><a href="#">ΐ―»κ Αφµµ</a></li>
-		<li><a href="#">ΐΞΉ°ΌÒ°³</a></li>
-		<li><a href="#">ΐεΌÒΌÒ°³</a></li>
-		<li><a href="#">ΔΏΉΒ΄ΟΖΌ</a></li>
-
-	</div>
-	</top1>
+		
+		<top1 class="top1">
+			
+			<img src="./images/footlogo.png" alt="" id = "footlogo">
+			
+			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
+			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
+			<div id = "foot">
+				
+					<li><a href="GoFootmap.do">λ°μμ·¨</a></li>
+					<li><a href="GoCulmap.do">μ μ‚° μ§€λ„</a></li>
+					<li><a href="GoPeople.do">μΈλ¬Όμ†κ°</a></li>
+					<li><a href="GoPlace.do">μ¥μ†μ†κ°</a></li>
+					<li><a href="SelectAll.do">μ»¤λ®¤λ‹ν‹°</a></li>
+			</div>
+				</div>
+			</top1>
 	<form>
-		<input type="text" id="input_search" placeholder="ΐΜΈ§ °Λ»φ">
-		<button type="submit" id="input_search_button">°Λ»φ</button>
+		<input type="text" id="input_search" placeholder="μ΄λ¦„ κ²€μƒ‰">
+		<button type="submit" id="input_search_button">κ²€μƒ‰</button>
 		&#160 &#160
 		<div></div>
 	</form>
@@ -58,10 +84,10 @@
 					src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
-			<td>Ό³Έν1</td>
-			<td>Ό³Έν2</td>
-			<td>Ό³Έν3</td>
-			<td>Ό³Έν4</td>
+			<td>μ„¤λª…1</td>
+			<td>μ„¤λª…2</td>
+			<td>μ„¤λª…3</td>
+			<td>μ„¤λª…4</td>
 		</tr>
 		<tr>
 			<td><a href="./person_detail.html"><img
@@ -74,16 +100,16 @@
 					src="./images/kim.png" width="200" height="200"></a></td>
 		</tr>
 		<tr>
-			<td>Ό³Έν5</td>
-			<td>Ό³Έν6</td>
-			<td>Ό³Έν7</td>
-			<td>Ό³Έν8</td>
+			<td>μ„¤λª…5</td>
+			<td>μ„¤λª…6</td>
+			<td>μ„¤λª…7</td>
+			<td>μ„¤λª…8</td>
 		</tr>
 
 	</table>
 	<center>
-		<button type="button" >ΐΜΐό</button>
-		<button type="button" >΄Ωΐ½</button>
+		<button type="button" >μ΄μ „</button>
+		<button type="button" >λ‹¤μ</button>
 	</center>
 </body>
 </html>
