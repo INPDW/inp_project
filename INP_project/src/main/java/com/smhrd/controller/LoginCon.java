@@ -28,13 +28,13 @@ public class LoginCon implements Controller {
 
 		MemberDTO row = dao.login(dto); // dao의 login기능 실행
 		if (row != null) {
-<<<<<<< HEAD
+
 			JOptionPane aa=new JOptionPane();
 			aa.showMessageDialog(null, "환영합니다");
-=======
+
 			
 			session.setAttribute("m_id", m_id);
->>>>>>> branch 'master' of https://github.com/INPDW/inp_project.git
+
 			return "main"; // 로그인 성공 ~~~ 메인페이지로
 			
 			
