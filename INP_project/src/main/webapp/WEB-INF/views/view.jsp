@@ -129,13 +129,13 @@
     top: -40px;" ></li>
     
     
-     <li><input type="submit" class="btn" value="글 삭제" style="
+     <li><button style="
       width: 105px;
     height: 41px;
     position: relative;
     left: 455px;
-    top: -82px;"
-}></li>
+    top: -82px;">글글글글 삭제</button>
+</li>
 
             </div>
         </div>
