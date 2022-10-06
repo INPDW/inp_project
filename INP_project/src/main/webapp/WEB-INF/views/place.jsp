@@ -17,7 +17,7 @@
 /> 
 
 
-		<title>인물소개</title>
+		<title>장소소개</title>
 	
 	
 		
@@ -47,9 +47,7 @@
 		<top1 class="top1">
 			
 			<img src="./images/footlogo.png" alt="" id = "footlogo">
-			
-			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
-			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
+
 			<div id = "foot">
 				
 					<li><a href="GoFootmap.do">발자취</a></li>
@@ -60,7 +58,12 @@
 			</div>
 				</div>
 			</top1>
-
+	<form>
+		&#160 &#160
+		&#160 &#160
+		&#160 &#160
+		<div></div>
+	</form>
 	&#160
 
 
@@ -69,14 +72,14 @@
 
 	<table>
 		<tr>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
+			<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
 		</tr>
 		<tr>
 			<td>설명1</td>
@@ -85,14 +88,15 @@
 			<td>설명4</td>
 		</tr>
 		<tr>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
-			<td><a href="./spot_detail.html"><img
-					src="./images/spot1.png" width="200" height="200"></a></td>
+			<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+					<td height = "0"><div style="height:100%"><a href="./person_detail.html"><img
+					src="./images/kim.png" width="300" height="300"></a></div></td>
+		</tr>
 		</tr>
 		<tr>
 			<td>설명5</td>
@@ -102,11 +106,9 @@
 		</tr>
 
 	</table>
-		
 	<center>
 		<button type="button" >이전</button>
 		<button type="button" >다음</button>
 	</center>
-
 </body>
 </html>
