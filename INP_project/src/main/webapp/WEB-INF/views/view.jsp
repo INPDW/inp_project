@@ -37,6 +37,10 @@
                    <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
 
 
+                 ${dto.article_title}
+                 
+                	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+
                 </div>
                 <div class="info">
                     <dl>
@@ -64,6 +68,8 @@
                     <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
 
                     
+
+                    </div>
                      <br><Br>
                     
                      <div class="comment" style = "
@@ -115,7 +121,7 @@
                 
                  <a href="" style="position: relative; left: 930px; ">댓글 쓰기</a>
                 
-            </div>
+            
             <div class="bt_wrap">
                 <a href="SelectAll.do" class="on">목록</a>
 
@@ -127,6 +133,16 @@
     position: relative;
     left: 120px;
     top: -40px;" ></li>
+
+    
+    
+     <li><input type="submit" class="btn" value="글 삭제" style="
+      width: 105px;
+    height: 41px;
+    position: relative;
+    left: 455px;
+    top: -82px;"
+}></li>
 
             </div>
         </div>
