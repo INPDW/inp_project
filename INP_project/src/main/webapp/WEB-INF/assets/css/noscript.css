@@ -29,3 +29,8 @@
 	body.is-preload #banner:after {
 		opacity: 0;
 	}
+	
+	h3#firstHeading {
+	color : #000;
+	
+}

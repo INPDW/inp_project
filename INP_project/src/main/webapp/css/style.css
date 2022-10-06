@@ -1,5 +1,11 @@
 @charset "EUC-KR";
 
+
+h3#firstHeading {
+	color : #000;
+	
+}
+
 * {
     margin: 0;
     padding: 0;
