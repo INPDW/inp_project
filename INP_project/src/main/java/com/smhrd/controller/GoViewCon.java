@@ -17,7 +17,6 @@ public class GoViewCon implements Controller {
 		CommunityDTO dto = new CommunityDTO();
 		try {
 			request.setCharacterEncoding("EUC-KR");
-			System.out.println("들어와!");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
