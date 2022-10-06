@@ -29,11 +29,7 @@ public class LoginCon implements Controller {
 		MemberDTO row = dao.login(dto); // dao의 login기능 실행
 		if (row != null) {
 
-			JOptionPane aa=new JOptionPane();
-			aa.showMessageDialog(null, "환영합니다");
-
-			
-			session.setAttribute("m_id", m_id);
+		
 
 			return "main"; // 로그인 성공 ~~~ 메인페이지로
 			
@@ -41,8 +37,7 @@ public class LoginCon implements Controller {
 			
 
 		} else {
-			JOptionPane aa=new JOptionPane();
-			aa.showMessageDialog(null, "아이디 또는 비밀번호를 확인하세요");
+			
 			return "login"; // 로그인 실패 ~~~ 다시 로그인 페이지로
 			
 		}
