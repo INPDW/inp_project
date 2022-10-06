@@ -134,7 +134,7 @@
     height: 41px;
     position: relative;
     left: 455px;
-    top: -82px;">글글글글 삭제</button>
+    top: -82px;">글 삭제</button>
 </li>
 
             </div>
