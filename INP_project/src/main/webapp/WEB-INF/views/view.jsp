@@ -19,20 +19,26 @@
 <body>
 
             <form action ="GoEdit.do" method = "post">
-<<<<<<< HEAD
+
+
    <div class="board_wrap">
-=======
+
+
 	<div class="board_wrap">
+
         <div class="board_title">
             <strong>커뮤니티</strong>
         </div>
         <div class="board_write_wrap">
             <div class="board_view">
                 <div class="title">
-                   ${dto.article_title}
-                   <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
-                	${dto.article_title}
+
+
+
+                  ${dto.article_title}
+
                 	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+
                 </div>
                 <div class="info">
                     <dl>
@@ -58,6 +64,7 @@
                 <div class="cont">
                     ${dto.article_content}
                     <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
+
                     
                      <br><Br>
                     
@@ -104,6 +111,7 @@
                 <textarea rows="3" cols=20 wrap="hard" style="width: 1000px; height: 100px"></textarea>
                     
                     
+
                     
                 </div>
                 
@@ -112,12 +120,16 @@
             </div>
             <div class="bt_wrap">
                 <a href="SelectAll.do" class="on">목록</a>
+
+
+
                 <li><input type="submit" class="btn" value="수정" style="
                      width: 105px;
     height: 41px;
     position: relative;
     left: 120px;
     top: -40px;" ></li>
+
             </div>
         </div>
     </div>

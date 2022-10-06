@@ -116,6 +116,11 @@ public class FrontController extends HttpServlet {
 
 		// 페이지 이동 if문 바깥으로
 		// nextView가 redirect:/를 포함하고 있는지??
+		String article_title = request.getParameter("article_title");
+		System.out.println("Test "+article_title);
+		
+		response.setContentType("text/html; charset=EUC-KR");
+		//response.setCharacterEncoding("euc-kr");
 		if (nextView.contains("redirect:/")) {
 			// redirect
 			// redirect:/selectAll.do
