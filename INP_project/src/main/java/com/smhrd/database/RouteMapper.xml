@@ -8,58 +8,57 @@
 <mapper namespace="com.smhrd.model.RouteDAO">
 	<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 풀네임을 작성하고 싶지않다면 mybatis-config.xml에 
 		별칭을 설정 -->
-	<!-- <select id="select_koo" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+	 <select id="select_koo" resultType="Route">
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon 
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '김구'
-        order by r.order_num;
-	</select>
+        order by r.order_num
+	</select> 
+	
+	
 	<select id="select_ja" resultType="Route">
-	select c.place_name, r.phrase, r.event_date, r.order_num 
+	select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '김좌진'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_bong" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '윤봉길'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_kwan" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '유관순'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_chang" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '안창호'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_joong" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '안중근'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_chae" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '신채호'
-        order by r.order_num;
+        order by r.order_num
 	</select>
 	<select id="select_dong" resultType="Route">
-		select c.place_name, r.phrase, r.event_date, r.order_num 
+		select c.place_name, r.phrase, r.event_date, r.order_num, c.place_lat, c.place_lon  
 		from inp_route r,  inp_people p,inp_place c
 		where  r.inp_seq= p.inp_seq and r.place_seq = c.place_seq and p.inp_name= '윤동주'
-        order by r.order_num;
+        order by r.order_num
 	</select>
-	 -->
 	
-
-
 
 </mapper>
  

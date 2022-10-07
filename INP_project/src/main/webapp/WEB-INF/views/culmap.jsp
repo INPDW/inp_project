@@ -68,6 +68,10 @@
       <div class="cul" id = "cul5">그 외</div>
 
 
+
+
+
+
     </div>
 
 		</div>

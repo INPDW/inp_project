@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="./js/jquery-3.6.1.min.js">
+
+</script>    
 		<title>독립 발자취</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -58,6 +61,18 @@
       <div class="per_foot" id = "per_foot8">유관순</div>
 
     </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
 
 		<div id="maps" style="border: solid;width:1900px; height:700px; "></div>
 

@@ -13,6 +13,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.smhrd.controller.AjaxConbong;
+import com.smhrd.controller.AjaxConchae;
+import com.smhrd.controller.AjaxConchang;
+import com.smhrd.controller.AjaxCondong;
+import com.smhrd.controller.AjaxConja;
+import com.smhrd.controller.AjaxConjoong;
+import com.smhrd.controller.AjaxConkoo;
+import com.smhrd.controller.AjaxConkwan;
 import com.smhrd.controller.ComAllCon;
 import com.smhrd.controller.ComDeleteCon;
 import com.smhrd.controller.ComInsertCon;
@@ -81,9 +89,15 @@ public class FrontController extends HttpServlet {
 		mappings.put("/GoPeople.do", new GoPeopleCon());
 		mappings.put("/GoPlace.do", new GoPlaceCon());
 		mappings.put("/GoMain.do", new GoMainCon());
-		
 		mappings.put("/IDCheck.do", new IDCheckCon());
-		
+		mappings.put("/AjaxConkoo.do", new AjaxConkoo());
+		mappings.put("/AjaxCondong.do", new AjaxCondong());
+		mappings.put("/AjaxConbong.do", new AjaxConbong());
+		mappings.put("/AjaxConchang.do", new AjaxConchang());
+		mappings.put("/AjaxConkwan.do", new AjaxConkwan());
+		mappings.put("/AjaxConja.do", new AjaxConja());
+		mappings.put("/AjaxConchae.do", new AjaxConchae());
+		mappings.put("/AjaxConjoong.do", new AjaxConjoong());
 	}
 
 	// 요청할때마다 뜨는게 아니라 한 번 밖에 일어나지 않음 -> 한번만 실행

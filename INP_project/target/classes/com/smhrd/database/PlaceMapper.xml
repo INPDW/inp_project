@@ -8,9 +8,42 @@
 <mapper namespace="com.smhrd.model.PlaceDAO">
 	<!-- resultType, parameterType : 패키지명까지 풀네임 작성 원칙 풀네임을 작성하고 싶지않다면 mybatis-config.xml에 
 		별칭을 설정 -->
+	<select id="place_select_all" resultType="Place">
+		select *
+		from inp_place
+	</select> 
 	
+	<select id="place_select_mapKor" resultType="Place">
+		select *
+		from inp_place
+		where place_nation like '%한국%'
+	</select> 
 	
-
+	<select id="place_select_mapJapan" resultType="Place">
+		select *
+		from inp_place
+		where place_nation like '%일본%'
+	</select> 
+	
+	<select id="place_select_mapChina" resultType="Place">
+		select *
+		from inp_place
+		where place_nation like '%중국%'
+	</select> 
+	
+	<select id="place_select_mapAmerica" resultType="Place">
+		select *
+		from inp_place
+		where place_nation like '%미국%'
+	</select> 
+	
+<select id="place_select_mapEx" resultType="Place">
+		  
+        select *
+		from inp_place
+		where place_nation not like '%미국%' and place_nation not like '%중국%' and place_nation not like '%일본%' 
+		and place_nation not like '%한국%'
+	</select> 
 
 </mapper>
  
