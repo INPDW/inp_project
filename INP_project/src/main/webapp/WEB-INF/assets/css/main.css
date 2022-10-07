@@ -65,6 +65,20 @@ footer, header, hgroup, menu, nav, section {
 	
 	
 	}
+	
+		#message{
+	
+position: relative;
+	
+width: 260px;
+	
+top: -135px;
+	
+right: -1100px;
+	}
+	
+	
+	
 
 	#btn1{
 		display: inline;

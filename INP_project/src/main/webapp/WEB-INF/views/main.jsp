@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+   
     
     <%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false" %>
@@ -18,7 +19,7 @@
 		<title>독립 발자취</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?after" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link
   rel="stylesheet"
@@ -38,22 +39,39 @@
 			
 	
 	
-	<h1 id="party">로그인 해 주세요~~</h1>
+
 	
 
 		<a href ="GoMain.do"><img src="./images/footlogo.png" alt="" id = "footlogo" style="
 		position: relative;
-		top: -55px;"></a>
+		top: -17px;"></a>
 		
 		
-		
+		<% String m_id = null;
+		m_id = (String)session.getAttribute("m_id");
+		%>
+		 
+	
 		
 		<top1 class="top1">
-			
-			
+		
+		<%if(m_id==null){%>
 			
 			<button onclick = "location.href='GoLogin.do'" id ="btn1" >LOGIN</button> 
 			<button onclick = "location.href='GoJoin.do'" id = "btn2" >JOIN</button> 
+		
+				<h1 id="message">로그인 해 주세요~~</h1>
+				
+				<%} else{ %>
+				
+					<button onclick = "location.href='GoJoin.do'" id = "btn2" >LOGOUT</button> 
+					
+				<h1 id="message"><%=m_id%> 님 환영 합니다. </h1>
+				<%}%>
+		
+			
+			
+			
 			<div id = "foot">
 				
 					<li><a href="GoFootmap.do">발자취</a></li>
