@@ -51,6 +51,21 @@ let per_foot1 = document.getElementById("per_foot1");
 
 					//처음 줌 값. 숫자가 작을수록 낮은 배율
 					zoom: 10
+					
+
+                
+
+
+
+
+
+                
+              
+					
+					
+					
+					
+					
 				});
 
 			}
