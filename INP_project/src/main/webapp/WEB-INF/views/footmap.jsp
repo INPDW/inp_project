@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="./js/jquery-3.6.1.min.js">
+
 
 </script>    
 		<title>독립 발자취</title>
@@ -23,6 +23,14 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<style>
+ /* 확대/축소 등 구글 지도의 기본 UI 감추기 */
+        .gmnoprint, .gm-control-active.gm-fullscreen-control {
+            display: none;  
+        }
+         </style>
 	</head>
 
 
@@ -47,7 +55,7 @@
 					<li><a href="#">장소소개</a></li>
 					<li><a href="#">커뮤니티</a></li>
 			</div>
-				</div >
+				</div>
 				
 			 <div class="div1">
       <div class="per_foot" id = "per_foot1">김구</div>
@@ -72,10 +80,13 @@
 
 
 
-
-
-		<div id="maps" style="border: solid;width:1900px; height:700px; "></div>
-
+    <br>
+    <br>
+		<div id="map" style="border: solid; width:1900px; height:700px;"></div>
+        <script  
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLI4aEZqQAP3F4eQUFhl9tJ2Q0VwM_HeA&callback=&libraries=&v=weekly"
+        async>
+  		 </script>  
 		
 		
 		

@@ -44,9 +44,6 @@ public class AjaxConkoo implements Controller {
 			e.printStackTrace();
 		}
         
-        
-		
-		
 		
 		return null;
 	}

@@ -24,7 +24,6 @@ import com.smhrd.controller.AjaxConkwan;
 import com.smhrd.controller.ComAllCon;
 import com.smhrd.controller.ComDeleteCon;
 import com.smhrd.controller.ComInsertCon;
-import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
 import com.smhrd.controller.GoCulmap;
@@ -77,7 +76,6 @@ public class FrontController extends HttpServlet {
 		mappings.put("/ComAll.do", new ComAllCon());
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
-		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
 		mappings.put("/GoJoin.do", new GoJoinCon());
 		mappings.put("/GoLogin.do", new GoLoginCon());
 		mappings.put("/GoView.do", new GoViewCon());
@@ -119,7 +117,6 @@ public class FrontController extends HttpServlet {
 		String command = url.substring(cpath.length());
 		String nextView = null;
 
-
 		Controller con = null;
 		// 요청을 구분해서 각각의 기능 실행
 		// HashMap.get(key);
@@ -128,18 +125,21 @@ public class FrontController extends HttpServlet {
 
 		nextView = con.execute(request, response);
 
-		// 페이지 이동 if문 바깥으로
-		// nextView가 redirect:/를 포함하고 있는지??
-		if (nextView.contains("redirect:/")) {
-			// redirect
-			// redirect:/selectAll.do
-			// ["redirect", "SellectALL.do][
-			response.sendRedirect(nextView.split(":/")[1]);
-		} else {
-			// forward
-			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/views/" + nextView + ".jsp");
-			rd.forward(request, response);
+		if (nextView != null) {
+			// 페이지 이동 if문 바깥으로
+			// nextView가 redirect:/를 포함하고 있는지??
+			// response.setCharacterEncoding("euc-kr");
+			if (nextView.contains("redirect:/")) {
+				// redirect
+				// redirect:/selectAll.do
+				// ["redirect", "SellectALL.do][
+				response.sendRedirect(nextView.split(":/")[1]);
+			} else {
+				// forward
+				RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/views/" + nextView + ".jsp");
+				rd.forward(request, response);
 
+			}
 		}
 
 	}

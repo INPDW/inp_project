@@ -37,7 +37,9 @@
 	<div class ="S">
 			
 	
-	<h1 id="party">~~~~~님 환영합니다!!</h1>
+	
+	<h1 id="party">로그인 해 주세요~~</h1>
+	
 
 		<a href ="GoMain.do"><img src="./images/footlogo.png" alt="" id = "footlogo" style="
 		position: relative;

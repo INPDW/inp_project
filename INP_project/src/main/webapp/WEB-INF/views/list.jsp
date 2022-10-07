@@ -40,7 +40,7 @@
                 <div>
                     <div class="num">${Community.article_seq} </div>
                     <div class="title"><a href = "SelectOne.do?article_seq=${Community.article_seq}">${Community.article_title}</a></div>
-                    <div class="writer">${Community.m_id} </div>
+                    <div class="writer">${Community.m_nick} </div>
                     <div class="date">${Community.article_date}</div>
                     <div class="count">${Community.article_cnt}</div>
                 </div>

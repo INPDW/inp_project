@@ -31,16 +31,6 @@ public class CommentDAO {
 	}
 
 
-	public int comUpdate(CommentDTO CommentDTO) {
-		int result = 0; // update, delete, insert -> 몇 행이 실행 int
-		SqlSession sqlSession = sqlSessionFactory.openSession(true);
-		result = sqlSession.update("com.smhrd.model.CommentDAO.comUpdate", CommentDTO);
-
-		sqlSession.close();
-
-		return result;
-
-	}
 
 	public int comDelete(String cmt_seq) {
 		int result = 0;

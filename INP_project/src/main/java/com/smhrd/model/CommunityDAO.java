@@ -48,15 +48,6 @@ public class CommunityDAO {
 
 	}
 	
-	public CommunityDTO nick(String m_id) {
-		CommunityDTO result = null;
-		
-		SqlSession sqlSession = sqlSessionFactory.openSession(true);
-		
-		result = sqlSession.selectOne("com.smhrd.model.CommunityDAO.nick", m_id);
-		
-		return result;
-	}
 
 	public int update(CommunityDTO CommunityDTO) {
 		int result = 0; // update, delete, insert -> 몇 행이 실행 int
@@ -73,12 +64,12 @@ public class CommunityDAO {
 
 	}
 
-	public int cnt(CommunityDTO  CommunityDTO) {
+	public int cnt(String alticle_seq) {
 		int result = 0;
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		// 2.특정한 sql 구문 골라서 실행
-		result = sqlSession.update("com.smhrd.model.CommunityDAO.update", CommunityDTO);
+		result = sqlSession.update("com.smhrd.model.CommunityDAO.cnt", alticle_seq);
 
 		// 3. 빌린 Connection 돌려주기
 		sqlSession.close();

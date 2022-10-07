@@ -63,15 +63,13 @@ src="./js/jquery-3.6.1.min.js"
   var customicon = 'https://th.bing.com/th/id/R.5e397f27b80da832f7589f434cf07ee1?rik=9Pvb2DeLVu5uLQ&riu=http%3a%2f%2fst2.depositphotos.com%2f2850099%2f7036%2fv%2f450%2fdepositphotos_70366819-Map-pointer-icon-flat-location.jpg&ehk=0T1%2fVX9FWY5L%2fxSEPCV7UtCyHKre2b7KKE1H%2bwrbmFg%3d&risl=&pid=ImgRaw&r=0'
  
 
-  var GreenIcon = new google.maps.MarkerImage(
-
-"http://labs.google.com/ridefinder/images/mm_20_green.png",
+  var GreenIcon = new google.maps.MarkerImage(src="./assets/css/images/mark.png",
 
 new google.maps.Size(100,80),
 
 new google.maps.Point(0, 0),
 
-new google.maps.Point(20, 20)
+new google.maps.Point(50, 50)
 
 ); //마커 이미지 변경 
 
@@ -80,7 +78,7 @@ new google.maps.Point(20, 20)
     position: seo,
     map,
     icon:GreenIcon, 
-    title: "l",
+    title: "1",
   });
 
   marker.addListener("click", () => {

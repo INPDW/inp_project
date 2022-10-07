@@ -18,7 +18,6 @@
 </head>
 <body>
 
-            <form action ="GoEdit.do" method = "post">
 
    <div class="board_wrap">
 
@@ -27,15 +26,19 @@
         <div class="board_title">
             <strong>커뮤니티</strong>
         </div>
+            <form action ="GoEdit.do" method = "post">
+        
         <div class="board_write_wrap">
             <div class="board_view">
                 <div class="title">
 
 
 
-                 ${dto.article_title}
-                 
-                	<input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+                  ${dto.article_title}
+                   <input type="text" name="article_title" style="display: none" value="${dto.article_title}">
+
+
+   
 
                 </div>
                 <div class="info">
@@ -47,7 +50,7 @@
                     </dl>
                     <dl>
                         <dt>작성자</dt>
-                        <dd>${dto.m_id}</dd>
+                        <dd>${dto.m_nick}</dd>
                         <input type="text" name="m_id" style="display: none" value="${dto.m_id}">
                     </dl>
                     <dl>
@@ -63,7 +66,12 @@
                     ${dto.article_content}
                     <input type="text" name="article_content" style="display: none" value="${dto.article_content}">
 
+
                     </div>
+                    
+ 
+                    </form>
+                    
                      <br><Br>
                     
                      <div class="comment" style = "
@@ -128,19 +136,25 @@
     left: 120px;
     top: -40px;" ></li>
     
+               
+
     
-     <li><input type="submit" class="btn" value="글 삭제" style="
-      width: 105px;
-    height: 41px;
-    position: relative;
-    left: 455px;
-    top: -82px;"
-}></li>
+    
+     <li>
+    
+    
+    </li>
+</li>
 
             </div>
         </div>
     </div>
-            </form>
-
+<button onclick = "location.href='Delete.do?article_seq=${dto.article_seq}'"
+     style="
+      width: 105px;
+    height: 41px;
+    position: relative;
+    left: 455px;
+    top: -82px;">   글 삭제</button>
 </body>
 </html>
