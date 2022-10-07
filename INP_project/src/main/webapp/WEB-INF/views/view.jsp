@@ -50,7 +50,7 @@
                     </dl>
                     <dl>
                         <dt>ÀÛ¼ºÀÚ</dt>
-                        <dd>${dto.m_id}</dd>
+                        <dd>${dto.m_nick}</dd>
                         <input type="text" name="m_id" style="display: none" value="${dto.m_id}">
                     </dl>
                     <dl>
@@ -70,7 +70,7 @@
                     </div>
                     
  
-                    
+                    </form>
                     
                      <br><Br>
                     
@@ -136,7 +136,7 @@
     left: 120px;
     top: -40px;" ></li>
     
-               </form>
+               
 
     
     

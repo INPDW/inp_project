@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.smhrd.controller.ComAllCon;
 import com.smhrd.controller.ComDeleteCon;
 import com.smhrd.controller.ComInsertCon;
-import com.smhrd.controller.ComUpdateCon;
 import com.smhrd.controller.Controller;
 import com.smhrd.controller.DeleteCon;
 import com.smhrd.controller.GoCulmap;
@@ -69,7 +68,6 @@ public class FrontController extends HttpServlet {
 		mappings.put("/ComAll.do", new ComAllCon());
 		mappings.put("/ComDeleteCon.do", new ComDeleteCon());
 		mappings.put("/ComInsertCon.do", new ComInsertCon());
-		mappings.put("/ComUpdateCon.do", new ComUpdateCon());
 		mappings.put("/GoJoin.do", new GoJoinCon());
 		mappings.put("/GoLogin.do", new GoLoginCon());
 		mappings.put("/GoView.do", new GoViewCon());

@@ -48,15 +48,6 @@ public class CommunityDAO {
 
 	}
 	
-	public String nick(String m_id) {
-		String result = null;
-		
-		SqlSession sqlSession = sqlSessionFactory.openSession(true);
-		
-		result = sqlSession.selectOne("com.smhrd.model.CommunityDAO.nick", m_id);
-		
-		return result;
-	}
 
 	public int update(CommunityDTO CommunityDTO) {
 		int result = 0; // update, delete, insert -> 몇 행이 실행 int
